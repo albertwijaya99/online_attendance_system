@@ -4,7 +4,7 @@ class Home extends BaseController
 {
 	public function index()
 	{
-	    $db = \Config\Database::connect();aasd
+	    $db = \Config\Database::connect();
         if ($db->query("SELECT 1 AS one")) {
             echo "a";
         } else {
