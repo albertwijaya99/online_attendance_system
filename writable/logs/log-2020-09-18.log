@@ -1,0 +1,53 @@
+CRITICAL - 2020-09-18 00:09:18 --> Use of undefined constant CI_ENVIRONMENT - assumed 'CI_ENVIRONMENT' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\app\Views\pages\Login.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pages/Login', Array, true)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(17): view('pages/Login', Array)
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-09-18 00:32:18 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::_escapeString() must be of the type string, null given, called in C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Database\BaseConnection.php on line 1430
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1430): CodeIgniter\Database\MySQLi\Connection->_escapeString(NULL)
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(23): CodeIgniter\Database\BaseConnection->escapeString(NULL)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->checkLogin()
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2020-09-18 00:34:53 --> Object of class App\Models\EmployeeModel could not be converted to string
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(25): App\Models\EmployeeModel->loginCheck('anggapurba@gmai...', '827ccb0eea8a706...')
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->checkLogin()
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-09-18 00:34:57 --> Object of class App\Models\EmployeeModel could not be converted to string
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(25): App\Models\EmployeeModel->loginCheck('anggapurba@gmai...', 'c20ad4d76fe9775...')
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->checkLogin()
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-09-18 00:40:44 --> Call to undefined function App\Controllers\equalTo()
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->checkLogin()
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-09-18 00:41:10 -->  route cannot be found while reverse-routing.
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(26): redirect('http://localhos...')
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->checkLogin()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}

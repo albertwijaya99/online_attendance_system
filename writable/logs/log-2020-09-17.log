@@ -1,0 +1,69 @@
+CRITICAL - 2020-09-17 23:40:30 --> Call to a member function enable_profiler() on null
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-09-17 23:47:20 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\app\Models\EmployeeModel.php(13): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(15): App\Models\EmployeeModel->getAllEmployee()
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-09-17 23:47:50 --> Class '\CodeIgniter\Database\MySQL\Connection' not found
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Database\Config.php(115): CodeIgniter\Database\Database->load(Array, 'default')
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Model.php(352): CodeIgniter\Database\Config::connect('default')
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(14): CodeIgniter\Model->__construct()
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-09-17 23:50:15 --> Invalid file: pages/Loagin.php
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/Loagin.ph...')
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pages/Loagin', Array, true)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(17): view('pages/Loagin', Array)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-09-17 23:50:32 --> Invalid file: pages/Loagin.php
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/Loagin.ph...')
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pages/Loagin', Array, true)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(17): view('pages/Loagin', Array)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-09-17 23:54:37 --> Function name must be a string
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pages/Login', Array, true)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(17): view('pages/Login', Array)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-09-17 23:54:56 --> Function name must be a string
+#0 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pages/Login', Array, true)
+#2 C:\xampp\htdocs\Tematik\online_attendance_system\app\Controllers\LoginController.php(17): view('pages/Login', Array)
+#3 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->index()
+#4 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Tematik\online_attendance_system\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Tematik\online_attendance_system\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
