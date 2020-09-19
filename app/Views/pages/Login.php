@@ -14,7 +14,7 @@
 
 <body>
 <div class="container">
-<img src="../assets/images/on-login.svg" class="center">
+<img src="../assets/images/On-login.svg" class="center">
 <h1>Online Attendance</h1>
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
