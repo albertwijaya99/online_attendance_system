@@ -46,7 +46,7 @@ class FileHandler extends BaseHandler implements HandlerInterface
 {
 
 	/**
-	 * pages to hold logs
+	 * Folder to hold logs
 	 *
 	 * @var string
 	 */

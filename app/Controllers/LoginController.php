@@ -14,7 +14,7 @@ class LoginController extends Controller
 
         return view('pages/Login',$data);
     }
-    public function checkLogin()
+    public function checkLoginData()
     {
         //initialize model and helper
         $db      = \Config\Database::connect(); //to help sanitize input
@@ -24,10 +24,10 @@ class LoginController extends Controller
         $loginPassword = $db->escapeString(md5($_POST['loginPassword']));
         if($EmployeeModel->loginCheck($loginEmail,$loginPassword) === 'berhasil'){
             $this->createSession($loginEmail);
-            return redirect()->to(base_url('login'));
+            return redirect()->to(base_url('/profile'));
         }
         else{
-            echo 'login gagal boi';
+            return 'login gagal boi';
         }
 
     }
@@ -42,6 +42,6 @@ class LoginController extends Controller
     }
     public function logout(){
         session()->destroy();
-        return redirect()->to(base_url('login'));
+        return redirect()->to(base_url('/login'));
     }
 }

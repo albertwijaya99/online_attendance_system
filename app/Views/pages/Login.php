@@ -8,9 +8,3 @@
     <button type="submit">Submit</button>
 </form>
 
-    <a href="<?= base_url('/logout'); ?>">Logout</a>
-
-
-<script>
-    console.log('Session : <?=session()->get("Email") ?>');
-</script>
