@@ -27,7 +27,8 @@ class LoginController extends Controller
             return redirect()->to(base_url('/profile'));
         }
         else{
-            return 'login gagal boi';
+            $loginErrorMsg = "Email or password incorrect";
+            return $loginErrorMsg;
         }
 
     }
