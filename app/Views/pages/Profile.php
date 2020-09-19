@@ -15,11 +15,9 @@
         <br>
         <?php echo('Nama        : '.$item['employeeName'])?>
         <br>
-        <?php echo('Point       : '.$item['employeePoint'])?>
-        <br>
         <?php echo('Division    : '.$item['division'])?>
         <br>
-        <img onclick="ChangeProfilePicture()" src="<?php echo($item['employeeImageUrl'])?>" alt="profile_picture" name="employeeImageUrl" id="employeeImageUrl" width="200">
+        <img onclick="ChangeProfilePicture()" src="<?php echo(base_url().'/Uploads/ProfilePicture/'.hash("sha512",session()->get('Email'))).'/'.$item['employeeImageUrl']?>" alt="profile_picture" name="employeeImageUrl" id="employeeImageUrl" width="200">
         <br>
     <?php endforeach;?>
 <?php endif;?>
