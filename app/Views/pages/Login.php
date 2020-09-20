@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
     <!-- Custom Login CSS -->
-    <link rel="stylesheet" type = "text/css"  href="<?php echo base_url(); ?>/../css/Login.css">
+    <link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Login.css'); ?>">
     <title>Online Attendance System</title>
 
   </head>
 
 <body>
 <div class="container">
-<img src="../assets/images/On-login.svg" class="center">
+<img src="<?php echo base_url('assets/images/docotel-logo.png'); ?>" class="img-docotel-logo">
+<img src="<?php echo base_url('assets/images/on-login.svg'); ?>" class="center img-vector">
 <h1>Online Attendance</h1>
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
