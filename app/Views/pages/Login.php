@@ -16,7 +16,7 @@
 
     <!-- Custom Login CSS -->
     <link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Login.css'); ?>">
-    <title>Online Attendance System</title>
+    <title>Login to Online Attendance System</title>
 
   </head>
 
