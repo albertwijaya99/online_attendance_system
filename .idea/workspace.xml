@@ -78,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600620828649</updated>
       <workItem from="1600620829845" duration="9094000" />
-      <workItem from="1600629991061" duration="1044000" />
+      <workItem from="1600629991061" duration="1172000" />
     </task>
     <servers />
   </component>
@@ -110,10 +110,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="12" y="4" width="1022" height="732" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1600620864925" />
-    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2" timestamp="1600630867455">
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2" timestamp="1600631072460">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2/0.0.1366.736@0.0.1366.736" timestamp="1600630867455" />
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2/0.0.1366.736@0.0.1366.736" timestamp="1600631072460" />
     <state x="420" y="73" width="520" height="591" key="git4idea.branch.GitSmartOperationDialog" timestamp="1600621171377">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
