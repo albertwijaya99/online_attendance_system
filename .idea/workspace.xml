@@ -26,9 +26,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33f7377-42e5-49bd-9a7c-541eae5523dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/pages/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/pages/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/copperplate-gothic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-extrabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-extralight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-heavy.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/on-login.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Login.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600620828649</updated>
       <workItem from="1600620829845" duration="9094000" />
-      <workItem from="1600629991061" duration="665000" />
+      <workItem from="1600629991061" duration="820000" />
     </task>
     <servers />
   </component>
@@ -100,14 +110,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1600621685706">
+    <state x="129" y="60" width="1096" height="620" key="MergeDialog" timestamp="1600630776580">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1600621685706" />
+    <state x="129" y="60" width="1096" height="620" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1600630776580" />
+    <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1600630776588">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1600630776588" />
     <state x="12" y="4" width="1022" height="732" key="SettingsEditor" timestamp="1600620864925">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="12" y="4" width="1022" height="732" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1600620864925" />
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2" timestamp="1600630788393">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2/0.0.1366.736@0.0.1366.736" timestamp="1600630788393" />
     <state x="420" y="73" width="520" height="591" key="git4idea.branch.GitSmartOperationDialog" timestamp="1600621171377">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
