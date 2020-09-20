@@ -18,7 +18,7 @@ class ProfileController extends Controller
     }
     public function changeProfilePicture(){
         //intialize model and helper
-        helper(['form', 'url']);
+        helper(['form', 'url','security']);
         $EmployeeModel = new EmployeeModel();
 
         //validation check of uploaded files
@@ -33,8 +33,10 @@ class ProfileController extends Controller
         if($isValid){
             try{
                 $newProfilePicture = $this->request->getFile('newProfilePicture');
-                $newProfilePicture->move( './Uploads/ProfilePicture/'.session()->get('Email').'/',$newProfilePicture->getName(),true);
-                $EmployeeModel->changeEmployeeImageUrl($newProfilePicture->getName());
+                $hashedEmail = hash('sha512',session()->get('Email'));
+                $hashedPictureNameType = $hashedEmail.'.'.$newProfilePicture->getExtension();
+                $newProfilePicture->move( './Uploads/ProfilePicture/'.$hashedEmail.'/',$hashedPictureNameType,true);
+                $EmployeeModel->changeEmployeeImageUrl($hashedPictureNameType);
                 return redirect()->to(base_url('/profile'));
             }
             catch (Exception $e){

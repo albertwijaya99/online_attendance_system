@@ -22,8 +22,6 @@ class EmployeeModel extends Model
         $data[0] = [
             'employeeEmail'     => $selectedEmployee['employee_email'],
             'employeeName'      => $selectedEmployee['employee_name'],
-            'employeePoint'     => $selectedEmployee['employee_point'],
-            'employeePaidLeave' => $selectedEmployee['employee_paid_leave'],
             'division'          => $employeeDivision['division_name'],
             'employeeImageUrl'  => $selectedEmployee['image_url_path']
         ];
@@ -32,7 +30,8 @@ class EmployeeModel extends Model
 
     public function loginCheck($loginEmail,$loginPassword){
         //if login info and db matched, value of count all result will be 1
-        if($this->where('employee_email',$loginEmail)->where('password',$loginPassword)->countAllResults() > 0){
+        $suspectedEmployee = $this->where('employee_email',$loginEmail)->first();
+        if($loginPassword === $suspectedEmployee['password']){
             return "berhasil";
         }
         else{
@@ -42,7 +41,7 @@ class EmployeeModel extends Model
 
     public function changeEmployeeImageUrl($newProfilePictureName){
         $data = [
-            'image_url_path'    => './Uploads/ProfilePicture/'.session()->get('Email').'/'.$newProfilePictureName
+            'image_url_path'    => $newProfilePictureName
         ];
         $this->update(session()->get('Email'),$data);
     }
