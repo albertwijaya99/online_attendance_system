@@ -29,13 +29,11 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <!-- <h5 class="card-title text-center">Sign In</h5> -->
             <form class="form-signin" action="<?= base_url('/checkLogin');?>" method="post">
              <label for="loginEmail">Email address</label>
               <div class="form-label-group">
                 <input type="email" name="loginEmail" id="loginEmail" class="form-control" placeholder="Email address" required autofocus>
               </div>
-
                <label for="loginPassword">Password</label>
               <div class="form-label-group">
                 <input type="password" name="loginPassword" id="loginPassword" class="form-control" placeholder="Password" required>
@@ -49,6 +47,7 @@
   </div>
 
 <script>
+ <!-- This function is for show and hide password input field -->
   $(function() {
     $('#loginPassword').password()
   })
