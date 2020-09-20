@@ -26,61 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33f7377-42e5-49bd-9a7c-541eae5523dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/docotel-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/pages/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/pages/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/copperplate-gothic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/copperplate-gothic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-extrabold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-extrabold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-extralight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-extralight.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-heavy.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-heavy.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-semibold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-semibold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/raleway-thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/fonts/raleway-thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/on-login.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/on-login.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523019.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523131.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523140.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523141.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523150.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523151.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523295.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523336.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523337.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523347.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523356.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523365.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523438.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523452.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523506.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523508.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523512.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523518.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523561.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600523562.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537294.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537341.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537364.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537399.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537408.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537413.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537419.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537435.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537450.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537451.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537452.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537464.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537466.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537469.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537506.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537517.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537526.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537528.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537558.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600537566.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="0cb88ee7c575d254df0475c5bcc1475032638118" />
+        <entry key="$PROJECT_DIR$" value="18-ConfigureCI-Login-Profile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +79,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600620828649</updated>
-      <workItem from="1600620829845" duration="4089000" />
+      <workItem from="1600620829845" duration="9094000" />
+      <workItem from="1600629991061" duration="665000" />
     </task>
     <servers />
   </component>
@@ -148,6 +97,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1600621685706">
