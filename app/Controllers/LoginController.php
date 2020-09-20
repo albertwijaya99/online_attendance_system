@@ -21,8 +21,12 @@ class LoginController extends Controller
         $EmployeeModel = new EmployeeModel();
 
         $loginEmail = $db->escapeString($_POST['loginEmail']);
-        $loginPassword = $db->escapeString(md5($_POST['loginPassword']));
-        if($EmployeeModel->loginCheck($loginEmail,$loginPassword) === 'berhasil'){
+        $loginPassword = $db->escapeString($_POST['loginPassword']);
+        $hashedPassword = hash('sha512',$loginPassword);
+        $hashedEmail = hash('sha512',$loginEmail);
+        $saltedPassword = hash('sha512',$hashedEmail.$hashedPassword);
+
+        if($EmployeeModel->loginCheck($loginEmail,$saltedPassword) === 'berhasil'){
             $this->createSession($loginEmail);
             return redirect()->to(base_url('/profile'));
         }
