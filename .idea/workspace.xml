@@ -31,16 +31,122 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2c45314-a153-49dd-a0ab-ac459c6bff2c" name="Default Changelist" comment="" />
+    <list default="true" id="a33f7377-42e5-49bd-9a7c-541eae5523dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600624913.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600624921.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600624923.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921733.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921772.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921806.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921807.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921920.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921949.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922130.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922152.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922214.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922218.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922388.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922419.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922421.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922423.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922734.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922741.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922743.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="steven_branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hmejJP2cgRuhlk2pXCAutlz9aW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/paola-automated-test/integration-test" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a33f7377-42e5-49bd-9a7c-541eae5523dd" name="Default Changelist" comment="" />
+      <created>1600620828649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600620828649</updated>
+      <workItem from="1600620829845" duration="9094000" />
+      <workItem from="1600629991061" duration="1172000" />
+      <workItem from="1601000247668" duration="34000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="126" width="428" height="486" key="FileChooserDialogImpl" timestamp="1601000280019">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="466" y="126" width="428" height="486" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1601000280019" />
+    <state x="129" y="60" width="1096" height="620" key="MergeDialog" timestamp="1600630776580">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="129" y="60" width="1096" height="620" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1600630776580" />
+    <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1600630776588">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="316" y="131" width="728" height="475" key="MultipleFileMergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1600630776588" />
+    <state x="12" y="4" width="1022" height="732" key="SettingsEditor" timestamp="1600620864925">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="12" y="4" width="1022" height="732" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1600620864925" />
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2" timestamp="1600921558212">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2/0.0.1366.736@0.0.1366.736" timestamp="1600921558212" />
+    <state x="420" y="73" width="520" height="591" key="git4idea.branch.GitSmartOperationDialog" timestamp="1600621171377">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="420" y="73" width="520" height="591" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1600621171377" />
   </component>
 </project>
