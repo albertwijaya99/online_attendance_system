@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(0deg, rgba(68,17,107,1) 0%, rgba(104,51,143,1) 0%, rgba(20,139,163,1) 100%);
+}
+
+.img-vector {
+    width: 550px;
+    padding-top: 100px;
+}
+
+.img-profile {
+    border-radius: 50%;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}
+
+@font-face {
+    font-family: defaultFont;
+    src: url("../assets/fonts/raleway-regular.ttf");
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url("../assets/fonts/copperplate-gothic.ttf");
+}
+
+div {
+    font-family: defaultFont;
+    text-align: center;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
+.logout-text {
+    color: white;
+    text-decoration: none;
+}
+
+.logout-text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-logout {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    height: 35px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 10px 0 rgba(116, 79, 168, 0.75);
+}
+
+.btn-logout:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+.btn-logout:focus {
+    outline: none;
+}
