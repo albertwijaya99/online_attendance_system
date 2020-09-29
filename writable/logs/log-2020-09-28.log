@@ -1,0 +1,10 @@
+CRITICAL - 2020-09-28 21:42:37 --> mkdir(): Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permis...', '/opt/lampp/htdo...', 212, Array)
+#1 /opt/lampp/htdocs/online_attendance_system/system/HTTP/Files/UploadedFile.php(212): mkdir('./Uploads/Profi...', 511, true)
+#2 /opt/lampp/htdocs/online_attendance_system/system/HTTP/Files/UploadedFile.php(163): CodeIgniter\HTTP\Files\UploadedFile->setPath('./Uploads/Profi...')
+#3 /opt/lampp/htdocs/online_attendance_system/app/Controllers/ProfileController.php(38): CodeIgniter\HTTP\Files\UploadedFile->move('./Uploads/Profi...', '30d773988385818...', true)
+#4 /opt/lampp/htdocs/online_attendance_system/system/CodeIgniter.php(918): App\Controllers\ProfileController->changeProfilePicture()
+#5 /opt/lampp/htdocs/online_attendance_system/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#6 /opt/lampp/htdocs/online_attendance_system/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/online_attendance_system/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
