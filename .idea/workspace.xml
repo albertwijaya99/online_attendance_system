@@ -32,31 +32,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33f7377-42e5-49bd-9a7c-541eae5523dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600624913.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600624921.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600624923.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921733.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921772.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921806.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921807.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921920.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600921949.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922130.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922152.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922214.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922218.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922388.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922419.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922421.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922423.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922734.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922741.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600922743.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/on-profile3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/Profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/pages/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/pages/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/ProfilePicture/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Uploads/ProfilePicture/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924585.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924606.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924643.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924700.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924701.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924706.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924709.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924714.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347342.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347349.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347350.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347505.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347512.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347517.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347530.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347537.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347539.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347544.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347545.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347546.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -74,7 +87,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/paola-automated-test/integration-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,12 +100,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -124,6 +138,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="117" width="528" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601348684050">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="416" y="117" width="528" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.736@0.0.1366.736" timestamp="1601348684050" />
     <state x="466" y="126" width="428" height="486" key="FileChooserDialogImpl" timestamp="1601000280019">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
