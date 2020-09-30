@@ -1,0 +1,54 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]" date="1601450507257" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 30/09/20 14.21 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="app/Database/Migrations/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Database/Migrations/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/Filters/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Filters/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/1.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/Libraries/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Libraries/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/2.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/Helpers/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Helpers/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/3.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="public/favicon.ico" />
+    <option name="AFTER_PATH" value="public/favicon.ico" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/favicon.ico" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="online_attendance_system.zip" />
+    <option name="AFTER_PATH" value="online_attendance_system.zip" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/online_attendance_system.zip" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/Models/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Models/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/4.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/Language/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Language/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/5.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/Database/Seeds/.gitkeep" />
+    <option name="AFTER_PATH" value="app/Database/Seeds/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/6.gitkeep" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/ThirdParty/.gitkeep" />
+    <option name="AFTER_PATH" value="app/ThirdParty/.gitkeep" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30_09_20_14_21_[Default_Changelist]/7.gitkeep" />
+  </binary>
+</changelist>
