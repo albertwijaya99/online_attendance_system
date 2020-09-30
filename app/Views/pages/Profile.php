@@ -11,37 +11,37 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <body>
-<br>
-
-<br>
 <div class="container">
-<div class="row">
-  <div class="col">
-  <img src="<?php echo base_url('assets/images/on-profile3.svg'); ?>" class="img-vector">
-  </div>
-  <div class="col-6 col-sm-5" style="padding-top: 55px">
-  <div class="card" style="width: 25rem; height: 30rem; border-radius: 25px;">
-    <div class="card-body">
-    <?php if(isset($Employee)):?>
-        <?php foreach ($Employee as $item): ?>
-         <div class="padding">
-          <div class="padding-bottom">
-         <img onclick="ChangeProfilePicture()" src="<?php echo(base_url().'/Uploads/ProfilePicture/'.hash("sha512",session()->get('Email'))).'/'.$item['employeeImageUrl']?>"
-         alt="profile_picture" name="employeeImageUrl" id="employeeImageUrl" class="img-profile">
-         </div>
-         <h5 class="card-title"><?php echo($item['employeeName'])?></h5>
-         <h6 class="card-subtitle mb-2 text-muted"> <?php echo($item['division'])?></h6>
-         <p class="card-text"> <?php echo($item['employeeEmail'])?></p>
-         </div>
-        <?php endforeach;?>
-    <?php endif;?>
-
-    <button class="btn-logout text-uppercase">
-    <a href="<?= base_url('/logout'); ?>" class="logout-text">Logout</a>
-    </button>
+    <div class="row no-gutters">
+        <div class="col">
+            <img src="<?php echo base_url('assets/images/on-profile.svg'); ?>" class="img-vector">
+            <img src="<?php echo base_url('assets/images/plant-decor.png'); ?>" class="img-vector-decor">
+        </div>
+        <div class="col" style="padding-top: 55px">
+          <div class="box">
+            <img src="<?php echo base_url('assets/images/on-profile-card.svg'); ?>" class="img-vector-card">
+                <?php if(isset($Employee)):?>
+                    <?php foreach ($Employee as $item): ?>
+                        <div class="text">
+                            <div class="padding">
+                                <div class="padding-bottom">
+                                    <img onclick="ChangeProfilePicture()" src="<?php echo(base_url().'/Uploads/ProfilePicture/'.hash("sha512",session()->get('Email'))).'/'.$item['employeeImageUrl']?>"
+                                     alt="profile_picture" name="employeeImageUrl" id="employeeImageUrl" class="img-profile">
+                                </div>
+                                <h5 class="card-title"><?php echo($item['employeeName'])?></h5>
+                                <h6 class="card-subtitle mb-2 text-muted"> <?php echo($item['division'])?></h6>
+                                <p class="card-text"> <?php echo($item['employeeEmail'])?></p>
+                            </div>
+                    <?php endforeach;?>
+                <?php endif;?>
+                <div style="padding-left: 55px; padding-top: 40px;">
+                    <button class="btn-logout text-uppercase">
+                    <a href="<?= base_url('/logout'); ?>" class="logout-text">Logout</a>
+                    </button>
+                </div>
+          </div>
+        </div>
     </div>
-  </div>
-  </div>
 </div>
 </div>
 <div class="modal" id="ChangeProfilePictureModal" tabindex="-1" role="dialog">
