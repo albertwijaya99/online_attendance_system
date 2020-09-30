@@ -32,32 +32,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33f7377-42e5-49bd-9a7c-541eae5523dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/on-profile3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/on-profile-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/on-profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/plant-decor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session016ea6fa00ccf998c26e4072ab64c4b63136e17d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session0c1fbb8ff9d278aabe35914c803f14f4b8f69568" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session260d2c898613d6848017254cf3cd9b5d169cf757" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session2737692f8ddf2fd2ad13c796a18eb402619cd183" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session283c9a192a2f3753d5d8f7cc46f00edfb3f63382" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session45647d70de9717fe51201eb9c86b8d3cb3d61cc9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session465f6e0f7cfc6daccaa9bc06554914a77dc21857" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session51d6855f6e86688b52f933c4440f4abb227c88ed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session7755cc13a41d90abd6612dd549caaa29ff043af4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session815085fa3cb2ece6f4e7c0b174c49a6d4727b8ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session84df6edf9f8e81a44b3e15c81125a0ded8e29d13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session90136103e1febf912b1ec5dc5d85d99d2727db88" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_session967ad70e563caee7b3a12c6f951659e38ef93e3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessionae4579a264480712c7b5feef32646c9baa42e4df" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessionb28f4182d1bf2d01c682e8abec6119c3d3a719e3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessiond99f287febc09690b338685403aced47a5fe3950" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessiondfd78567ee28c03a96f0167f0a1d8d9fac6adbbc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessione3b813cb916c1ba4fec88c866873156fd8985431" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessioneab73e993186e09f8057e01225df774317135e8a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessionf93d72f318cb8a9eb77c7ed12bf53ebf03702db2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writable/session/ci_sessionfe65472814f1b819d8cfe10b1c75d5c072141710" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_09_20_23_59__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Views/pages/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/pages/Profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/Uploads/ProfilePicture/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Uploads/ProfilePicture/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924585.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924606.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924643.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924700.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924701.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924706.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924709.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1600924714.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347342.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347349.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347350.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347505.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347512.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347517.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347530.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347537.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347539.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347544.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347545.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601347546.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Uploads/ProfilePicture/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Uploads/ProfilePicture/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a/30d773988385818b4df24e10adb3f737a31eddffad4745de2e89ff5b4342351f7b156788aba0cd9363462e3f96c290e77e219fb3e452b6cf4396739778a30f4a.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/on-profile3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353234.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353242.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353247.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353251.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353283.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353301.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353315.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353332.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353371.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353395.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353438.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353448.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353456.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353545.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353591.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353600.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353630.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353641.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353693.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/debugbar/debugbar_1601353714.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/writable/session/ci_session2073084a8196abb38637ce524b919a001a1d8194" beforeDir="false" afterPath="$PROJECT_DIR$/writable/session/ci_session2073084a8196abb38637ce524b919a001a1d8194" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +146,9 @@
       <workItem from="1600620829845" duration="9094000" />
       <workItem from="1600629991061" duration="1172000" />
       <workItem from="1601000247668" duration="34000" />
+      <workItem from="1601429499665" duration="3270000" />
+      <workItem from="1601432800536" duration="907000" />
+      <workItem from="1601433739644" duration="9862000" />
     </task>
     <servers />
   </component>
@@ -130,7 +160,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="21-login-form-ui" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

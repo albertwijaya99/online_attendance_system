@@ -2,20 +2,65 @@ body {
     background: linear-gradient(0deg, rgba(68,17,107,1) 0%, rgba(104,51,143,1) 0%, rgba(20,139,163,1) 100%);
 }
 
+p {
+    font-size: 15px;
+}
+
 .img-vector {
     width: 550px;
-    padding-top: 100px;
+    padding-top: 180px;
+    padding-left: 30px;
+}
+
+.img-vector-decor {
+    position:fixed;
+    left:0;
+    bottom:0;
+    margin:0;
+    padding:0;
+    width:200px;
+}
+
+.img-vector-card {
+    width: 480px;
+    padding-top: 50px;
+    padding-left: -30px;
 }
 
 .img-profile {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
     border-radius: 50%;
     left: -1000%;
     right: -1000%;
     top: -1000%;
     bottom: -1000%;
     margin: auto;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.img-profile:hover{
+    opacity: 0.3;
+}
+
+.box {
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+
+.box .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 15%;
+    right: 0;
+    text-align: center;
+    top: 20%; /* Adjust this value to move the positioned div up and down */
+    width: 60%; /* Set the width of the positioned div */
 }
 
 @font-face {
@@ -34,7 +79,7 @@ div {
 }
 
 .padding {
-    padding: 30px;
+    padding-left: 60px;
 }
 
 .padding-bottom {
