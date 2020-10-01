@@ -9,10 +9,8 @@ class LoginController extends Controller
     public function index()
     {
         //intialize model and helper
-        $EmployeeModel = new EmployeeModel();
-        $data['Employee'] = $EmployeeModel->getAllEmployee();
-
-        return view('pages/Login',$data);
+        session()->start();
+        return view('pages/Login');
     }
     public function checkLoginData()
     {
@@ -31,8 +29,9 @@ class LoginController extends Controller
             return redirect()->to(base_url('/profile'));
         }
         else{
-            $loginErrorMsg = "Email or password incorrect";
-            return $loginErrorMsg;
+            $loginErrorMsg = "Email or Password incorrect";
+            session()->setFlashdata('error_msg',$loginErrorMsg);
+            return redirect()->to(base_url('/login'));
         }
 
     }

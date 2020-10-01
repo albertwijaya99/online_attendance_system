@@ -31,10 +31,11 @@ class EmployeeModel extends Model
     public function loginCheck($loginEmail,$loginPassword){
         //if login info and db matched, value of count all result will be 1
         $suspectedEmployee = $this->where('employee_email',$loginEmail)->first();
-        if($loginPassword === $suspectedEmployee['password']){
+        if(!empty($suspectedEmployee) && $loginPassword === $suspectedEmployee['password'])
+        {
             return "berhasil";
         }
-        else{
+        else {
             return "gagal";
         }
     }
