@@ -49,7 +49,7 @@ class ProfileController extends Controller
         }
         else{
             //add error msg here, after ui done
-            $ProfileErrorMsg = "Filetype are not allowed.";
+            $ProfileErrorMsg = "Filetype is not allowed.";
             session()->setFlashdata('error_msg',$ProfileErrorMsg);
             return redirect()->to(base_url('/profile'));
         }
