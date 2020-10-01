@@ -40,6 +40,11 @@
               </div>
               <button class="btn btn-lg btn-submit btn-block text-uppercase" type="submit">Login</button>
            </form>
+              <?php if(!empty(session()->getFlashdata('error_msg'))): ?>
+                <div style="display: block; text-align: center; padding-bottom: 10px;">
+                    <span style="color: red"><?= session()->getFlashdata('error_msg') ?></span>
+                </div>
+              <?php endif; ?>
           </div>
         </div>
       </div>
