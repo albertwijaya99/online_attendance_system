@@ -25,9 +25,14 @@
                         <div class="text">
                             <div class="padding">
                                 <div class="padding-bottom">
-                                    <img onclick="ChangeProfilePicture()" src="<?php echo(base_url().'/Uploads/ProfilePicture/'.hash("sha512",session()->get('Email'))).'/'.$item['employeeImageUrl']?>"
+                                    <img onclick="ChangeProfilePicture()" src="<?php echo(base_url().'/Uploads/ProfilePicture/'.md5(session()->get('Email'))).'/'.$item['employeeImageUrl']?>"
                                      alt="profile_picture" name="employeeImageUrl" id="employeeImageUrl" class="img-profile">
                                 </div>
+                                <!-- if error msg exist-->
+                                <?php if(!empty(session()->getFlashdata('error_msg'))): ?>
+                                    <h6 class="card-subtitle mb-2" style="color: red"><?= session()->getFlashdata('error_msg') ?></h6>
+                                <?php endif; ?>
+                                <!-- if error msg exist-->
                                 <h5 class="card-title"><?php echo($item['employeeName'])?></h5>
                                 <h6 class="card-subtitle mb-2 text-muted"> <?php echo($item['division'])?></h6>
                                 <p class="card-text"> <?php echo($item['employeeEmail'])?></p>
@@ -56,7 +61,7 @@
             <div class="modal-body">
             <!--Start of Change profile picture form-->
                 <form action="<?= base_url('changeProfilePicture')?>" enctype="multipart/form-data" method="post">
-                    <input type="file" name="newProfilePicture" id="newProfilePicture" required>
+                    <input type="file" name="newProfilePicture" id="newProfilePicture" accept="image/*" required>
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary">Change</button>

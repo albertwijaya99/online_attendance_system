@@ -26,14 +26,14 @@ class ProfileController extends Controller
             'newProfilePicture' => [
                 'uploaded[newProfilePicture]',
                 'max_size[newProfilePicture,4096]', //max file 4mb
-                'mime_in[newProfilePicture,image/png,image/jpg,image/jpeg]', //only jpg,jpeg,png file allowed
+                'mime_in[newProfilePicture,image/jpg,image/png,image/jpeg]', //only jpg,jpeg,png file allowed
             ]
         ]);
 
         if($isValid){
             try{
                 $newProfilePicture = $this->request->getFile('newProfilePicture');
-                $hashedEmail = hash('sha512',session()->get('Email'));
+                $hashedEmail = md5(session()->get('Email'));
                 $hashedPictureNameType = $hashedEmail.'.'.$newProfilePicture->getExtension();
                 $newProfilePicture->move( './Uploads/ProfilePicture/'.$hashedEmail.'/',$hashedPictureNameType,true);
                 $EmployeeModel->changeEmployeeImageUrl($hashedPictureNameType);
@@ -41,13 +41,16 @@ class ProfileController extends Controller
             }
             catch (Exception $e){
                 //add error msg here, after ui done
+                $ProfileErrorMsg = "Something goes wrong.";
+                session()->setFlashdata('error_msg',$ProfileErrorMsg);
                 return redirect()->to(base_url('/profile'));
             }
 
         }
         else{
             //add error msg here, after ui done
-            dd('error boi');
+            $ProfileErrorMsg = "Filetype are not allowed.";
+            session()->setFlashdata('error_msg',$ProfileErrorMsg);
             return redirect()->to(base_url('/profile'));
         }
     }
