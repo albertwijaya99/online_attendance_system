@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="638.284" height="681.588" viewBox="0 0 638.284 681.588">
+  <g id="Group_28" transform="translate(-976.513 -317.412)">
+    <rect id="Rectangle_26" width="471.571" height="657.471" rx="22.84" transform="translate(1143.226 328.738)" fill="#f2f2f2"/>
+    <rect id="Rectangle_28" width="464.935" height="642.715" rx="22.84" transform="translate(1124.884 317.912)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="1"/>
+    <g id="undraw_choice_9385" transform="translate(976.513 802.441)">
+      <ellipse id="Ellipse_21" cx="114.269" cy="18.334" rx="114.269" ry="18.334" transform="translate(28.567 159.891)" fill="#f2f2f2"/>
+      <ellipse id="Ellipse_22"  cx="114.269" cy="18.334" rx="114.269" ry="18.334" transform="translate(37.521 149.231)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_58"  d="M91.21,565.957a19.6,19.6,0,0,0-16.893,11.811c-4.224,10.211,1.215,22.2,9.379,29.65s18.652,11.7,28.182,17.3c12.8,7.514,24.3,17.944,30.7,31.333s7.085,29.974-.443,42.765c-6.987,11.872-19.692,18.978-31.809,25.531" transform="translate(-71.699 -559.598)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="1"/>
+      <ellipse id="Ellipse_28" cx="14.923" cy="7.248" rx="14.923" ry="7.248" transform="translate(15.349 0)" fill="#ff8cf7"/>
+      <ellipse id="Ellipse_29"  cx="14.923" cy="7.248" rx="14.923" ry="7.248" transform="translate(27.288 47.754)" fill="#ff8cf7"/>
+      <ellipse id="Ellipse_30"  cx="14.923" cy="7.248" rx="14.923" ry="7.248" transform="translate(0 55.429)" fill="#ff8cf7"/>
+      <ellipse id="Ellipse_31"  cx="14.923" cy="7.248" rx="14.923" ry="7.248" transform="translate(42.637 95.508)" fill="#ff8cf7"/>
+      <ellipse id="Ellipse_32" cx="14.923" cy="7.248" rx="14.923" ry="7.248" transform="translate(72.484 95.508)" fill="#ff8cf7"/>
+    </g>
+  </g>
+</svg>
