@@ -29,7 +29,7 @@ class LoginController extends Controller
             return redirect()->to(base_url('/profile'));
         }
         else{
-            $loginErrorMsg = "Email or password incorrect";
+            $loginErrorMsg = "Email or Password incorrect";
             session()->setFlashdata('error_msg',$loginErrorMsg);
             return redirect()->to(base_url('/login'));
         }
