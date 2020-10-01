@@ -1,8 +1,0 @@
-CRITICAL - 2020-09-29 23:49:51 --> Trying to access array offset on value of type null
-#0 /opt/lampp/htdocs/online_attendance_system/app/Models/EmployeeModel.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 34, Array)
-#1 /opt/lampp/htdocs/online_attendance_system/app/Controllers/LoginController.php(29): App\Models\EmployeeModel->loginCheck('nanda@paola.id', '7f927b57d5f7ddc...')
-#2 /opt/lampp/htdocs/online_attendance_system/system/CodeIgniter.php(918): App\Controllers\LoginController->checkLoginData()
-#3 /opt/lampp/htdocs/online_attendance_system/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
-#4 /opt/lampp/htdocs/online_attendance_system/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#5 /opt/lampp/htdocs/online_attendance_system/public/index.php(45): CodeIgniter\CodeIgniter->run()
-#6 {main}
