@@ -46,4 +46,9 @@ class EmployeeModel extends Model
         ];
         $this->update(session()->get('Email'),$data);
     }
+
+    public function isAdmin($employee_email){
+        $selectedEmployee = $this->find($employee_email);
+        return $selectedEmployee['is_admin'];
+    }
 }

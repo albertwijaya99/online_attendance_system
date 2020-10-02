@@ -38,8 +38,12 @@ class LoginController extends Controller
 
     private function createSession($emailLogin)
     {
+        //initialize model and helper
+        $EmployeeModel = new EmployeeModel();
+
         $data = [
             'Email' => $emailLogin,
+            'isAdmin' => $EmployeeModel->isAdmin($emailLogin)
         ];
         session()->set($data);
         return true;

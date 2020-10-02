@@ -1,0 +1,57 @@
+@font-face {
+    font-family: defaultFont;
+    src: url("../assets/fonts/raleway-regular.ttf");
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url("../assets/fonts/copperplate-gothic.ttf");
+}
+
+.img-logo {
+    width: 250px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+
+.nav-container{
+    margin-left: 80px; !important;
+    margin-right: 0px; !important;
+    padding-right: 0px; !important;
+}
+.font-white{
+    color: white;
+    font-size: 20px;
+}
+
+.font-black{
+    color: black;
+    font-size: 20px;
+}
+
+.nav-link{
+    margin-left: 40px; !important;
+    margin-right: 40px;!important;
+}
+
+a {
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:hover {
+    color: white;
+}
+li.active {
+    background-color: white;
+    color: black; !important;
+    border-radius: 50px;
+}
+a:link.active{
+    color: black;
+}
+a:hover.active {
+    color: black;
+}
