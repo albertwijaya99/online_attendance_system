@@ -77,9 +77,6 @@
 
 <?= $this->section('additionalScript');?>
 <script>
-    console.log('Session : <?=session()->get("Email") ?>');
-    console.log('Environment : <?=ENVIRONMENT?>');
-
     function ChangeProfilePicture(){
         $('#ChangeProfilePictureModal').modal('show');
     }
