@@ -13,6 +13,7 @@ class ProfileController extends Controller
         $EmployeeModel = new EmployeeModel();
         if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
         $data['Employee'] = $EmployeeModel->getSelectedEmployee(session()->get('Email')); //contains logged in user data
+        $data['title'] = "profile";
 
         return view('pages/Profile', $data);
     }
