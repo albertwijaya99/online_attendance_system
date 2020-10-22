@@ -42,7 +42,7 @@
            </form>
               <?php if(!empty(session()->getFlashdata('error_msg'))): ?>
                 <div style="display: block; padding-bottom: 10px;  text-align: center; ">
-                    <span style="color: red"><?= session()->getFlashdata('error_msg') ?></span>
+                    <span style="color: red; font-size: 15px;"><?= session()->getFlashdata('error_msg') ?></span>
                 </div>
               <?php endif; ?>
           </div>
