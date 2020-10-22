@@ -2,7 +2,7 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg">
         <div class="container nav-container">
-            <div class="col-sm-12 col-lg-5">
+            <div>
                 <img src="<?= base_url('assets/images/docotel-logo-navbar.png')?>" class="img-logo">
             </div>
 

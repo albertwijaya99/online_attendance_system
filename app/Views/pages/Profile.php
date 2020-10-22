@@ -1,4 +1,4 @@
-<?= $this->extend('includes/Template'); ?>
+<?= $this->extend('Includes/Template'); ?>
 
 <?= $this->section('customCSS');?>
     <!-- Custom Profile CSS -->
@@ -27,7 +27,9 @@
                         <div class="text">
                             <div class="padding">
                                 <div class="padding-bottom">
-                                    <img onclick="ChangeProfilePicture()" src="<?php echo(base_url().'/Uploads/ProfilePicture/'.md5(session()->get('Email'))).'/'.$item['employeeImageUrl']?>"
+                                    <img onclick="ChangeProfilePicture()"
+                                    src="<?php echo(base_url().'/Uploads/ProfilePicture/'.md5(session()->get('Email'))).'/'.$item['employeeImageUrl']?>"
+                                    onerror="this.onerror=null;this.src='assets/images/default-photo.svg';"
                                      alt="profile_picture" name="employeeImageUrl" id="employeeImageUrl" class="img-profile">
                                 </div>
                                 <!-- if error msg exist-->
