@@ -30,6 +30,7 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <form class="form-signin" action="<?= base_url('/checkLogin');?>" method="post">
+                <?= csrf_field() ?>
              <label for="loginEmail">Email address</label>
               <div class="form-label-group">
                 <input type="email" name="loginEmail" id="loginEmail" class="form-control" placeholder="Email address" required autofocus>
