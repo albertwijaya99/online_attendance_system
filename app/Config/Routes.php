@@ -43,6 +43,9 @@ $routes->post('changeProfilePicture','ProfileController::changeProfilePicture');
 
 //Home Routes
 $routes->post('/CheckTappedIn','HomeController::CheckTappedIn');
+
+//LeaderBoard Routes
+$routes->get('/leaderboard','LeaderBoardController::index');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

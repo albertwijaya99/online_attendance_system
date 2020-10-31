@@ -18,44 +18,36 @@
 
 <?= $this->section('content');?>
     <!-- All Content goes Here without <body></body> -->
+<br><br><br><br>
     <form action='<?=base_url("/CheckTappedIn")?>' method="post">
         <?= csrf_field()?>
-        <button name="TapButton" id="TapButton" type="submit" <?php if($disableButton) echo("disabled") ?>  ><?= $buttonTitle ?></button>
+        <button name="TapButton" id="TapButton" type="submit" <?php if($disableButton) { echo("disabled"); } ?>  ><?= $buttonTitle ?></button>
     </form>
-    <span id="currentTime"></span>
+    <span id="currentTime"></span><br>
+    <span id="employeeName"><?= $EmployeeName ?></span><br>
+    <span id="currentDate"></span><br>
 <?= $this->endSection(); ?>
 
 <?= $this->section('additionalScript');?>
     <!--Additional JS goes Here-->
     <script>
-        // function pressButton(){
-        //     var today = new Date();
-        //     var currTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        //     var button = document.getElementById('TapButton').innerText;
-        //     if(button === 'CHECK-IN' && currTime>'08:30:00'  && currTime<'09:30:00' ){
-        //
-        //     }
-        //     else{
-        //         alert('gagal');
-        //     }
-        // }
-
         $('document').ready(function(){
             updateTime();
+            currDate = moment().format("dddd, DD MMMM YYYY");;
+            $('#currentDate').html(currDate);
         });
         function updateTime(){
-            var today = new Date();
-            //var currTime = '8:31'; // for testing only
-            //var currTime = today.getHours() + ":" + today.getMinutes(); //current real time
-            $('#currentTime').html(currTime);
-            //comment until ask SA about tapping  rules
-            // if( currTime <= '8:30' ){
-            //     console.log("gaboleh tap in")
-            //     $('#TapButton').prop('disabled',true);
-            // }
+            // un-comment one of the var currTime below,
+            //var currTime = moment('07:31', 'HH:mm').toArray(); $('#currentTime').html(currTime['3']+":"+currTime['4']); // for testing only , u can decide the time by yourself
+            var currTime = moment().format("HH:mm"); $('#currentTime').html(currTime); //real time
+
+            if( moment(currTime, 'HH:mm') < moment('07:30', 'HH:mm') ){
+                $('#TapButton').prop('disabled',true);
+            }
         }
         $(function(){
-            setInterval(updateTime, 1000*1000);
+
+            setInterval(updateTime, 1000*1);
         });
     </script>
 

@@ -9,14 +9,14 @@ class CheckTimeModel extends Model
     protected $table      = 'check_time';
     protected $primaryKey = 'check_time_id';
     protected $allowedFields = ['id_check_valid','check_in_time','check_out_time','employee_email'];
-
     public function tapIn($email){
+        $pointModel = new PointModel;
         $currTime = new Time('now');
         $todayTapRecord = $this
                                 ->like('check_in_time',$currTime->toDateString())
                                 ->where('employee_email',$email)
-                                ->first();;
-
+                                ->first();
+        if(strtotime($currTime) < strtotime('07:30:00')) return "not yet dude";
         if(empty($todayTapRecord)){
             //for tapping in
             $data = [
@@ -33,6 +33,7 @@ class CheckTimeModel extends Model
                     'check_out_time' => $currTime->toDateTimeString(),
                 ];
                 $this->update($todayTapRecord['check_time_id'],$data);
+                $pointModel->calculateTodayPoint();
                 return "Thank you for your hard work today";
             }
             else{
