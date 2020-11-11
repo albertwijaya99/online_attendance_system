@@ -21,6 +21,7 @@
   </head>
 
 <body>
+<br>
 <div class="container">
 <img src="<?php echo base_url('assets/images/docotel-logo.png'); ?>" class="img-docotel-logo">
 <img src="<?php echo base_url('assets/images/on-login.svg'); ?>" class="center img-vector">
