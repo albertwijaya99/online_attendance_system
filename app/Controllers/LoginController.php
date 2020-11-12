@@ -26,7 +26,7 @@ class LoginController extends Controller
 
         if($EmployeeModel->loginCheck($loginEmail,$saltedPassword) === 'berhasil'){
             $this->createSession($loginEmail);
-            return redirect()->to(base_url('/profile'));
+            return redirect()->to(base_url('/'));
         }
         else{
             $loginErrorMsg = "Email or Password incorrect";

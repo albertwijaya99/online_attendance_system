@@ -1,10 +1,10 @@
-<?= $this->extend('includes/Template'); ?>
+<?= $this->extend('Includes/Template'); ?>
 
 <?= $this->section('customCSS');?>
 <!-- Custom CSS goes Here-->
 
-<!-- Custom Profile CSS -->
-<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Profile.css'); ?>">
+<!-- Custom Home CSS -->
+<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Home.css'); ?>">
 <?= $this->endSection(); ?>
 
 <?= $this->section('customJS');?>
@@ -19,13 +19,26 @@
 <?= $this->section('content');?>
     <!-- All Content goes Here without <body></body> -->
 <br><br><br><br>
-    <form action='<?=base_url("/CheckTappedIn")?>' method="post">
-        <?= csrf_field()?>
-        <button name="TapButton" id="TapButton" type="submit" <?php if($disableButton) { echo("disabled"); } ?>  ><?= $buttonTitle ?></button>
-    </form>
-    <span id="currentTime"></span><br>
-    <span id="employeeName"><?= $EmployeeName ?></span><br>
-    <span id="currentDate"></span><br>
+    <div class="container">
+        <div class="row no-gutters">
+        <div class="col">
+        <br>
+            <img src="<?php echo base_url('assets/images/home.svg'); ?>" class="img-vector">
+        </div>
+         <div class="col" style="padding-top: 55px; padding-left: 80px;">
+            <div class="box">
+                <b><span id="employeeName">Hi, <?= $EmployeeName ?>!</span></b><br>
+                <h1><b id="currentTime"></b></h1><br>
+                <span id="currentDate"></span><br>
+                <form action='<?=base_url("/CheckTappedIn")?>' method="post">
+                    <?= csrf_field()?>
+                    <button name="TapButton" id="TapButton" type="submit" class="btn-checkin-checkout"
+                    <?php if($disableButton) { echo("disabled"); } ?>  ><?= $buttonTitle ?></button>
+                </form>
+            </div>
+         </div>
+        </div>
+    </div>
 <?= $this->endSection(); ?>
 
 <?= $this->section('additionalScript');?>

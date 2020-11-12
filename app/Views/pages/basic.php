@@ -3,6 +3,12 @@
 <?= $this->section('customCSS');?>
 <!-- Custom CSS goes Here-->
 
+<!-- Custom Home CSS -->
+<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Home.css'); ?>">
+
+<!-- Custom Leaderboard CSS -->
+<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Leaderboard.css'); ?>">
+
 <!-- Custom Profile CSS -->
 <link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Profile.css'); ?>">
 <?= $this->endSection(); ?>

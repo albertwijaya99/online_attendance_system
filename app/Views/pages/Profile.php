@@ -13,13 +13,14 @@
 <?= $this->endSection(); ?>
 
 <?= $this->section('content');?>
+<br><br>
 <div class="container">
     <div class="row no-gutters">
         <div class="col">
             <img src="<?php echo base_url('assets/images/on-profile.svg'); ?>" class="img-vector">
             <img src="<?php echo base_url('assets/images/plant-decor.png'); ?>" class="img-vector-decor">
         </div>
-        <div class="col" style="padding-top: 55px">
+        <div class="col">
           <div class="box">
             <img src="<?php echo base_url('assets/images/on-profile-card.svg'); ?>" class="img-vector-card">
                 <?php if(isset($Employee)):?>
