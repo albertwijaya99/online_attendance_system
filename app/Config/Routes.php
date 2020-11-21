@@ -46,6 +46,10 @@ $routes->post('/CheckTappedIn','HomeController::CheckTappedIn');
 
 //LeaderBoard Routes
 $routes->get('/leaderboard','LeaderBoardController::index');
+
+//PaidLeave Routes
+$routes->get('/paidLeave','PaidLeaveController::index');
+$routes->post('/RequestLeave','PaidLeaveController::requestLeave');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
