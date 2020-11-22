@@ -54,6 +54,9 @@ $routes->post('/RequestLeave','PaidLeaveController::requestLeave');
 //Admin Routes
 $routes->get('/admin/showLeaveRequest','AdminController::showLeaveRequest');
 $routes->get('/admin/fetchSelectedLeaveRequest','AdminController::fetchSelectedLeaveRequest');
+$routes->get('/admin/leaveHistory','AdminController::showLeaveHistory');
+$routes->get('/admin/fetchEmployeeLeaveHistory','AdminController::fetchEmployeeLeaveHistory');
+$routes->get('/admin/fetchLeaveHistoryByDate','AdminController::fetchLeaveHistoryByDate');
 $routes->post('/admin/respondLeaveRequest','AdminController::respondLeaveRequest');
 /**
  * --------------------------------------------------------------------

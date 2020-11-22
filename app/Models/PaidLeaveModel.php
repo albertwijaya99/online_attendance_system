@@ -38,6 +38,15 @@ class PaidLeaveModel extends Model
         $leaveDateArr = explode(',',$leaveDate);
         return $leaveDateArr;
     }
+    public function getLeaveHistoryPerDates($dates){
+        $db         =   \Config\Database::connect();
+        $builder    =   $db->table('paidleave');
+        $query      =   $builder
+            ->where('leave_date',$dates)
+            ->get()
+            ->getResultArray();
+        return $query;
+    }
     public function requestLeave($leaveDateRangeArr,$leaveReason,$leaveType){
         $DivisionModel = new DivisionModel();
         $divisionHeadEmail = $DivisionModel->getEmployeeDivisionHeadEmail();
@@ -54,18 +63,19 @@ class PaidLeaveModel extends Model
             $this->insert($data);
         endforeach;
     }
-    public function getPendingLeaveRequest(){
+    public function getLeaveRequest($status){
         $db         =   \Config\Database::connect();
         $builder    =   $db->table('paidleave');
         $query      =   $builder
             ->select('requester')
             ->select('requester_note')
-            ->where('status','pending')
             ->where('approver',session()->get('Email'))
             ->groupBy('requester_note')
-            ->orderBy('requester','ASC')
-            ->get()
-            ->getResultArray();
+            ->orderBy('requester','ASC');
+        if($status != "all") {$query = $query->where('status',$status);}
+        $query = $query
+                    ->get()
+                    ->getResultArray();
         return $query;
     }
     public function respondLeaveRequest($requesterNotes, $adminResponse, $declineReason ,$requesterEmail){

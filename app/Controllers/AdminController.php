@@ -4,6 +4,7 @@ use App\Models\EmployeeModel;
 use App\Models\PaidLeaveModel;
 use App\Models\PointModel;
 use CodeIgniter\Controller;
+use CodeIgniter\I18n\Time;
 
 class AdminController extends Controller
 {
@@ -16,8 +17,17 @@ class AdminController extends Controller
         //intialize model and helper
         if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
         $data['title'] = "admin";
-        $data['requesterEmailList'] = $PaidLeaveModel->getPendingLeaveRequest();
+        $data['requesterEmailList'] = $PaidLeaveModel->getLeaveRequest('pending');
         return view('pages/admin/leaveRequest',$data);
+    }
+    public function showLeaveHistory(){
+        $PaidLeaveModel = new PaidLeaveModel();
+        $EmployeeModel = new EmployeeModel();
+        //intialize model and helper
+        if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
+        $data['title'] = "admin";
+        $data['employee'] = $EmployeeModel->getAllEmployeeWithStringDivision();
+        return view('pages/admin/leaveHistory',$data);
     }
     public function fetchSelectedLeaveRequest(){
         $request = \Config\Services::request();
@@ -26,6 +36,22 @@ class AdminController extends Controller
         $requesterEmail = $request->getGet('email');
         $requesterLeaveDate = $PaidLeaveModel->getLeaveHistoryPerNotes($requesterNotes,$requesterEmail);
         echo json_encode($requesterLeaveDate);
+
+    }
+    public function fetchEmployeeLeaveHistory(){
+        $request = \Config\Services::request();
+        $PaidLeaveModel = new PaidLeaveModel();
+        $employeeEmail = $request->getGet('email');
+        $employeeLeaveHistory = $PaidLeaveModel->getLeaveHistoryPerEmployee($employeeEmail);
+        echo json_encode($employeeLeaveHistory);
+
+    }
+    public function fetchLeaveHistoryByDate(){
+        $request = \Config\Services::request();
+        $db = \Config\Database::connect();
+        $PaidLeaveModel = new PaidLeaveModel();
+        $date = !empty($request->getGet('date')) ? Time::parse($db->escapeString($request->getGet('date')))->toDateString() : Time::today()->toDateString(); //if theres no selected date, use current date [today] instead
+        echo json_encode($PaidLeaveModel->getLeaveHistoryPerDates($date));
 
     }
     public function respondLeaveRequest(){

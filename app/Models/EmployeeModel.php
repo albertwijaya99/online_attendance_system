@@ -13,6 +13,11 @@ class EmployeeModel extends Model
         //get all employee data
         return $this->findAll();
     }
+    public function getAllEmployeeWithStringDivision(){
+        $db         =   \Config\Database::connect();
+        $query = $db->query('select e.*,d.division_name from employee as e,division as d where d.division_id = e.division_id');
+        return $query->getResultArray();
+    }
 
     public function getSelectedEmployee($employee_email){
         $Division = new \App\Models\DivisionModel();

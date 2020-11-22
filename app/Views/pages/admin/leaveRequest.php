@@ -89,7 +89,7 @@
             clickedIndex = $(this).attr("name");
             var url = '<?=base_url("/admin/fetchSelectedLeaveRequest")?>?notes='+clickedRequesterNote+'&email='+clickedRequesterEmail;
             $('#spanRequesterNotes').html(clickedRequesterNote);
-            // fetch data site //
+            // fetch data (send ajax request)
             fetch(url,{
                 method: "GET",
                 headers: {
