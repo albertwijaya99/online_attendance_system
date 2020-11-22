@@ -70,7 +70,10 @@
     var leaveReasonGlobal = "";
     var leaveDateGlobal = "";
     $('#mdp-demo').multiDatesPicker({
-        beforeShowDay: $.datepicker.noWeekends,
+        beforeShowDay: function(date) {
+            var day = date.getDay();
+            return [(day != 0),  ''];
+        },
         maxPicks: <?= $remaining_leaves?>
     });
 

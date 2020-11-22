@@ -5,6 +5,7 @@ use App\Models\PaidLeaveModel;
 use App\Models\PointModel;
 use CodeIgniter\Controller;
 use CodeIgniter\I18n\Time;
+use App\Models\CheckTimeModel;
 
 class AdminController extends Controller
 {
@@ -29,6 +30,15 @@ class AdminController extends Controller
         $data['employee'] = $EmployeeModel->getAllEmployeeWithStringDivision();
         return view('pages/admin/leaveHistory',$data);
     }
+    public function showAttendanceHistory(){
+        $PaidLeaveModel = new PaidLeaveModel();
+        $EmployeeModel = new EmployeeModel();
+        //intialize model and helper
+        if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
+        $data['title'] = "admin";
+        $data['employee'] = $EmployeeModel->getAllEmployeeWithStringDivision();
+        return view('pages/admin/attendanceHistory',$data);
+    }
     public function fetchSelectedLeaveRequest(){
         $request = \Config\Services::request();
         $PaidLeaveModel = new PaidLeaveModel();
@@ -38,7 +48,7 @@ class AdminController extends Controller
         echo json_encode($requesterLeaveDate);
 
     }
-    public function fetchEmployeeLeaveHistory(){
+    public function fetchLeaveHistoryByEmployee(){
         $request = \Config\Services::request();
         $PaidLeaveModel = new PaidLeaveModel();
         $employeeEmail = $request->getGet('email');
@@ -66,5 +76,22 @@ class AdminController extends Controller
             $PaidLeaveModel->respondLeaveRequest($requesterNotes, $adminResponse, $declineReason ,$requesterEmail);
         }
         return redirect()->to(base_url('/admin/showLeaveRequest'));
+    }
+    public function fetchAttendanceHistoryByEmployee(){
+        $request = \Config\Services::request();
+        $CheckTimeModel = new CheckTimeModel;
+        $email = $request->getGet('email');
+        $attendanceHistory = $CheckTimeModel->geAttendanceHistoryPerEmployee($email);
+        echo json_encode($attendanceHistory);
+
+    }
+    public function fetchAttendanceHistoryByDate(){
+        $request = \Config\Services::request();
+        $db = \Config\Database::connect();
+        $CheckTimeModel = new CheckTimeModel;
+        $date = !empty($request->getGet('date')) ? Time::parse($db->escapeString($request->getGet('date')))->toDateString() : Time::today()->toDateString(); //if theres no selected date, use current date [today] instead
+        $attendanceHistory = $CheckTimeModel->geAttendanceHistoryPerDate($date);
+        echo json_encode($attendanceHistory);
+
     }
 }

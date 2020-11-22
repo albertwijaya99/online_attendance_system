@@ -103,7 +103,10 @@
                     addDatesValues = response;
                     $('.mdpLeaveDate').multiDatesPicker('destroy');
                     $('#mdp-'+clickedIndex).multiDatesPicker({
-                        beforeShowDay: $.datepicker.noWeekends,
+                        beforeShowDay: function(date) {
+                            var day = date.getDay();
+                            return [(day != 0),  ''];
+                        },
                         addDates: addDatesValues,
                     });
                     $('.btn-action').css("display","");

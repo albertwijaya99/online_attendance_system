@@ -40,12 +40,8 @@ class PaidLeaveModel extends Model
     }
     public function getLeaveHistoryPerDates($dates){
         $db         =   \Config\Database::connect();
-        $builder    =   $db->table('paidleave');
-        $query      =   $builder
-            ->where('leave_date',$dates)
-            ->get()
-            ->getResultArray();
-        return $query;
+        $query = $db->query('select pl.*,e.employee_name from paidleave as pl, employee as e where e.employee_email = pl.requester and pl.leave_date = ?',$dates);
+        return $query->getResultArray();
     }
     public function requestLeave($leaveDateRangeArr,$leaveReason,$leaveType){
         $DivisionModel = new DivisionModel();

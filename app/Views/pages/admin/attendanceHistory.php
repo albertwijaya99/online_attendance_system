@@ -26,21 +26,21 @@
 <!-- All Content goes Here without <body></body> -->
 
 <!--    loop to show requester name-->
-    <br><br><br><br><br>
-    <?php foreach ($employee as $index => $currEmployee) :?>
-        <div class="employee_name" name="<?= $index?>" employee_name="<?= $currEmployee['employee_name'] ?>" employee_email="<?= $currEmployee['employee_email']?> ">
-            <?php echo $currEmployee['employee_name'] .' - '.  $currEmployee['division_name'] ?>
-        </div>
-        <br>
-    <?php endforeach;?>
+<br><br><br><br><br>
+<?php foreach ($employee as $index => $currEmployee) :?>
+    <div class="employee_name" name="<?= $index?>" employee_name="<?= $currEmployee['employee_name'] ?>" employee_email="<?= $currEmployee['employee_email']?> ">
+        <?php echo $currEmployee['employee_name'] .' - '.  $currEmployee['division_name'] ?>
+    </div>
+    <br>
+<?php endforeach;?>
 
 <!--    div to contains all leave history info-->
-    <div id="container-history-leave" style="color: red"></div>
+<div id="container-history-leave" style="color: red"></div>
 
-    <br>
+<br>
 
-    <div id="mdp-demo"></div> <!--calendar div-->-->
-    <button name="checkLeaveHistory" id="checkLeaveHistory" class="btn-checkin-checkout btn-check-history-by-date">Check</button>
+<div id="mdp-demo"></div> <!--calendar div-->-->
+<button name="checkLeaveHistory" id="checkLeaveHistory" class="btn-checkin-checkout btn-check-history-by-date">Check</button>
 
 <?= $this->endSection(); ?>
 
@@ -61,7 +61,7 @@
     $('.employee_name').on('click',function (){
         $('#container-history-leave').empty();
         clickedEmployeeEmail = $(this).attr("employee_email");
-        var url = '<?=base_url("/admin/fetchEmployeeLeaveHistory")?>?email='+clickedEmployeeEmail;
+        var url = '<?=base_url("/admin/fetchAttendanceHistoryByEmployee")?>?email='+clickedEmployeeEmail;
         // fetch data (send ajax request)
         fetch(url,{
             method: "GET",
@@ -72,16 +72,18 @@
         })
             .then(response => response.json())
             .then(response => {
+                console.log(response)
                 var span = "";
                 if(response.length === 0){
-                    span = "<span> no leaves history found </span><br>";
+                    span = "<span> no attendance history found </span><br>";
                     $('#container-history-leave').append(span);
                 }
                 else {
                     for(var i = 0 ; i<response.length ; i++){
-                        span = "<span>"+ response[i]['leave_date'];
-                        (response[i]['approver_note'] === null) ? span += " | - "  : span += " | " + response[i]['approver_note'];
-                        span += " | " + response[i]['status'] +"</span><br>";
+                        span = "<span>"+ response[i]['date'];
+                        span += " | "+ response[i]['check_in_time'];
+                        (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
+                        span += "</span><br>";
                         $('#container-history-leave').append(span);
                     }
                 }
@@ -96,7 +98,7 @@
     $('.btn-check-history-by-date').on('click',function (){
         $('#container-history-leave').empty();
         clickedDates = $('#mdp-demo').multiDatesPicker('value');
-        var url = '<?=base_url("/admin/fetchLeaveHistoryByDate")?>?date='+clickedDates;
+        var url = '<?=base_url("/admin/fetchAttendanceHistoryByDate")?>?date='+clickedDates;
         // fetch data (send ajax request)
         fetch(url,{
             method: "GET",
@@ -110,14 +112,15 @@
                 console.log(response)
                 var span = "";
                 if(response.length === 0){
-                    span = "<span> no leaves history found </span><br>";
+                    span = "<span> no attendance history found </span><br>";
                     $('#container-history-leave').append(span);
                 }
                 else {
                     for(var i = 0 ; i<response.length ; i++){
                         span = "<span>"+ response[i]['employee_name'];
-                        (response[i]['approver_note'] === null) ? span += " | - "  : span += " | " + response[i]['approver_note'];
-                        span += " | " + response[i]['status'] +"</span><br>";
+                        span += " | "+ response[i]['check_in_time'];
+                        (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
+                        span += "</span><br>";
                         $('#container-history-leave').append(span);
                     }
                 }
