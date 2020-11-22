@@ -22,8 +22,8 @@
 <div class="center">
     <!-- This for display position, picture, email, score  -->
     <?php foreach ($points as $index => $point): ?>
-
-    <!-- Display for top 3 position  -->
+<!--    access image url = $point['image_url_path'];-->
+        <!-- Display for top 3 position  -->
     <?php if ($index < 3): ?>
     <div class="top3">
         <!-- First position  -->
