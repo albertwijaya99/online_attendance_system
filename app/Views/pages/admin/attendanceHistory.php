@@ -34,13 +34,13 @@
     <br>
 <?php endforeach;?>
 
-<!--    div to contains all leave history info-->
-<div id="container-history-leave" style="color: red"></div>
+<!--    div to contains all attendance history info-->
+<div id="container-history-attendance" style="color: red"></div>
 
 <br>
 
 <div id="mdp-demo"></div> <!--calendar div-->-->
-<button name="checkLeaveHistory" id="checkLeaveHistory" class="btn-checkin-checkout btn-check-history-by-date">Check</button>
+<button name="checkAttendanceHistory" id="checkAttendanceHistory" class="btn-checkin-checkout btn-check-history-by-date">Check</button>
 
 <?= $this->endSection(); ?>
 
@@ -57,9 +57,9 @@
         maxPicks: 1,
     });
 
-    //send ajax after admin clicked on requester name, to get the requested leave date and show leaves history
+    //send ajax after admin clicked on requester name, to get the requested attendance date and show attendance history
     $('.employee_name').on('click',function (){
-        $('#container-history-leave').empty();
+        $('#container-history-attendance').empty();
         clickedEmployeeEmail = $(this).attr("employee_email");
         var url = '<?=base_url("/admin/fetchAttendanceHistoryByEmployee")?>?email='+clickedEmployeeEmail;
         // fetch data (send ajax request)
@@ -76,7 +76,7 @@
                 var span = "";
                 if(response.length === 0){
                     span = "<span> no attendance history found </span><br>";
-                    $('#container-history-leave').append(span);
+                    $('#container-history-attendance').append(span);
                 }
                 else {
                     for(var i = 0 ; i<response.length ; i++){
@@ -84,7 +84,7 @@
                         span += " | "+ response[i]['check_in_time'];
                         (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
                         span += "</span><br>";
-                        $('#container-history-leave').append(span);
+                        $('#container-history-attendance').append(span);
                     }
                 }
 
@@ -96,7 +96,7 @@
 
     //send ajax after admin clicked checked button,
     $('.btn-check-history-by-date').on('click',function (){
-        $('#container-history-leave').empty();
+        $('#container-history-attendance').empty();
         clickedDates = $('#mdp-demo').multiDatesPicker('value');
         var url = '<?=base_url("/admin/fetchAttendanceHistoryByDate")?>?date='+clickedDates;
         // fetch data (send ajax request)
@@ -113,7 +113,7 @@
                 var span = "";
                 if(response.length === 0){
                     span = "<span> no attendance history found </span><br>";
-                    $('#container-history-leave').append(span);
+                    $('#container-history-attendance').append(span);
                 }
                 else {
                     for(var i = 0 ; i<response.length ; i++){
@@ -121,7 +121,7 @@
                         span += " | "+ response[i]['check_in_time'];
                         (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
                         span += "</span><br>";
-                        $('#container-history-leave').append(span);
+                        $('#container-history-attendance').append(span);
                     }
                 }
 
