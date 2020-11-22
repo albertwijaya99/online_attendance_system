@@ -6,18 +6,37 @@ use CodeIgniter\I18n\Time;
 
 class PaidLeaveModel extends Model
 {
-    protected $table      = 'leave';
+    protected $table      = 'paidleave';
     protected $primaryKey = 'leave_id';
     protected $allowedFields = ['leave_type','status','leave_date','requester','requester_note','approver','approver_note'];
 
     public function getLeaveHistoryPerEmployee($requester){
         $db         =   \Config\Database::connect();
-        $builder    =   $db->table('leave');
+        $builder    =   $db->table('paidleave');
         $query      =   $builder
                         ->where('requester',$requester)
                         ->get()
                         ->getResultArray();
         return $query;
+    }
+    public function getLeaveHistoryPerNotes($notes,$email){
+        $db         =   \Config\Database::connect();
+        $builder    =   $db->table('paidleave');
+        $query      =   $builder
+                        ->where('requester_note',$notes)
+                        ->where('requester',$email)
+                        ->get()
+                        ->getResultArray();
+        $leaveDate = "";
+        $counter = count($query);
+        foreach($query as $leave):
+            $temp= Time::parse($leave['leave_date']);
+            $leaveDate.= $temp->toLocalizedString('MM/dd/yyyy');
+            $counter -= 1;
+            if($counter > 0) $leaveDate .= ",";
+        endforeach;
+        $leaveDateArr = explode(',',$leaveDate);
+        return $leaveDateArr;
     }
     public function requestLeave($leaveDateRangeArr,$leaveReason,$leaveType){
         $DivisionModel = new DivisionModel();
@@ -33,6 +52,47 @@ class PaidLeaveModel extends Model
                 'approver' => $divisionHeadEmail
             ];
             $this->insert($data);
+        endforeach;
+    }
+    public function getPendingLeaveRequest(){
+        $db         =   \Config\Database::connect();
+        $builder    =   $db->table('paidleave');
+        $query      =   $builder
+            ->select('requester')
+            ->select('requester_note')
+            ->where('status','pending')
+            ->where('approver',session()->get('Email'))
+            ->groupBy('requester_note')
+            ->orderBy('requester','ASC')
+            ->get()
+            ->getResultArray();
+        return $query;
+    }
+    public function respondLeaveRequest($requesterNotes, $adminResponse, $declineReason ,$requesterEmail){
+        $db         =   \Config\Database::connect();
+        $builder    =   $db->table('paidleave');
+        $query      =   $builder
+            ->where('requester_note',$requesterNotes)
+            ->where('requester',$requesterEmail)
+            ->where('status','pending')
+            ->get()
+            ->getResultArray();
+        $leaveID = "";
+        $counter = count($query);
+        //collect id of pending leaves request
+        foreach($query as $leave):
+            $leaveID.= $leave['leave_id'];
+            $counter -= 1;
+            if($counter > 0) $leaveID .= ",";
+        endforeach;
+        $leaveIDArr = explode(',',$leaveID);
+        //update leaves request simultaneously
+        foreach($query as $index => $leave):
+            $data = [
+                'status' => $adminResponse,
+                'approver_note' => $declineReason
+            ];
+            $this->update($leaveIDArr[$index],$data);
         endforeach;
     }
 }

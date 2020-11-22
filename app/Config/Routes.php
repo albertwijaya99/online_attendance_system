@@ -50,6 +50,11 @@ $routes->get('/leaderboard','LeaderBoardController::index');
 //PaidLeave Routes
 $routes->get('/paidLeave','PaidLeaveController::index');
 $routes->post('/RequestLeave','PaidLeaveController::requestLeave');
+
+//Admin Routes
+$routes->get('/admin/showLeaveRequest','AdminController::showLeaveRequest');
+$routes->get('/admin/fetchSelectedLeaveRequest','AdminController::fetchSelectedLeaveRequest');
+$routes->post('/admin/respondLeaveRequest','AdminController::respondLeaveRequest');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
