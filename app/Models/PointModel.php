@@ -11,15 +11,8 @@ class PointModel extends Model
     protected $allowedFields = ['email','point','date'];
     public function getAllEmployeePoint(){
         $db         =   \Config\Database::connect();
-        $builder    =   $db->table('point');
-        $query      =   $builder
-                                ->select('email')
-                                ->selectSum('point')
-                                ->groupBy('email')
-                                ->orderBy('point','DESC')
-                                ->get()
-                                ->getResultArray();
-        return $query;
+        $query = $db->query('select p.*,sum(p.point),e.image_url_path from point as p,employee as e where p.email = e.employee_email group by p.email order by p.point desc');
+        return $query->getResultArray();
     }
 
     public function calculateTodayPoint(){
