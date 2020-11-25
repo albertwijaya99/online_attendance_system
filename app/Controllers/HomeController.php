@@ -34,8 +34,10 @@ class HomeController extends BaseController
         curl_setopt($ch, CURLOPT_HEADER, 0);
         $data = curl_exec($ch);
         curl_close($ch);
-        if($data === "[]") return false;
+        if(date('D',$Time->getTimestamp()) == 'Sun') return false; // sunday checker
+        if($data === "[]") return false; //national holiday checker
         return true;
+
     }
 }
 

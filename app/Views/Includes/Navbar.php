@@ -13,7 +13,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item" id="li-home">          <a href="<?= base_url('/') ?>" class="font-white nav-link font-weight-bold" id="a-home">Home</a></li>
                     <li class="nav-item" id="li-leaderboard">   <a href="<?= base_url('leaderboard')?>" class="font-white nav-link font-weight-bold" id="a-leaderboard">LeaderBoard</a></li>
-                    <li class="nav-item" id="li-paidleave">     <a href="#" class="font-white nav-link font-weight-bold" id="a-paidleave">PaidLeave</a></li>
+                    <li class="nav-item" id="li-paidleave">     <a href="<?= base_url('paidLeave')?>" class="font-white nav-link font-weight-bold" id="a-paidleave">Leave</a></li>
                     <li class="nav-item" id="li-profile">       <a href="<?= base_url('profile') ?>" class="font-white nav-link font-weight-bold" id="a-profile">Profile</a></li>
 
                     <?php if(session()->get('isAdmin') === '1'): //only showed on admin account?>

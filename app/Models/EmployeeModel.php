@@ -7,12 +7,13 @@ class EmployeeModel extends Model
 {
     protected $table      = 'employee';
     protected $primaryKey = 'employee_email';
-    protected $allowedFields = ['employee_name', 'employee_point','password','employee_paid_leave','division_id','position','image_url_path'];
+    protected $allowedFields = ['employee_name', 'employee_point','password','employee_paid_leave','division_id','position','image_url_path','remaining_leave'];
 
     public function getAllEmployee(){
         //get all employee data
         return $this->findAll();
     }
+
     public function getSelectedEmployee($employee_email){
         $Division = new \App\Models\DivisionModel();
         //get employee data with selected email
@@ -26,6 +27,12 @@ class EmployeeModel extends Model
             'employeeImageUrl'  => $selectedEmployee['image_url_path']
         ];
         return $data;
+    }
+
+    public function getRemainingLeave($employee_email){
+        //get employee data with selected email
+        $selectedEmployee = $this->find($employee_email);
+        return $selectedEmployee['remaining_leave'];
     }
 
     public function loginCheck($loginEmail,$loginPassword){
@@ -51,4 +58,15 @@ class EmployeeModel extends Model
         $selectedEmployee = $this->find($employee_email);
         return $selectedEmployee['is_admin'];
     }
+
+    public function cutRemainingLeave($minus){
+        $remainingLeave = $this->getRemainingLeave(session()->get('Email'));
+        $remainingLeave -= $minus;
+        $data = [
+            'remaining_leave' => $remainingLeave
+        ];
+        $this->update(session()->get('Email'),$data);
+
+    }
+
 }
