@@ -36,6 +36,28 @@
                     <?php if($disableButton) { echo("disabled"); } ?>  ><?= $buttonTitle ?></button>
                 </form>
             </div>
+             <span style="cursor: pointer" id="seeHistoryText"> <u> See History</u></span>
+
+             <div class="modal" id="showAttendanceHistory" tabindex="-1" role="dialog">
+                 <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h5 class="modal-title">History Attendance</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                             </button>
+                         </div>
+                         <div class="modal-body">
+                             <!--    div to contains all attendance history info-->
+                             <div id="container-history-attendance" style="color: red"></div>
+
+                             <br>
+                         </div>
+                             <!-- End of Change profile picture form -->
+                         </div>
+                     </div>
+                 </div>
+             </div>
          </div>
         </div>
     </div>
@@ -62,6 +84,41 @@
 
             setInterval(updateTime, 1000*1);
         });
+        $('#seeHistoryText').on('click',function (){
+            $('#showAttendanceHistory').modal('show');
+            var email = '<?= session()->get("Email") ?>' ;
+            var url = '<?=base_url("/admin/fetchAttendanceHistoryByEmployee")?>?email='+email;
+            // fetch data (send ajax request)
+            fetch(url,{
+                method: "GET",
+                headers: {
+                    'Content-Type': 'application/json',
+                    "X-Requested-With": "XMLHttpRequest"
+                },
+            })
+                .then(response => response.json())
+                .then(response => {
+                    console.log(response)
+                    var span = "";
+                    if(response.length === 0){
+                        span = "<span> no attendance history found </span><br>";
+                        $('#container-history-attendance').append(span);
+                    }
+                    else {
+                        for(var i = 0 ; i<response.length ; i++){
+                            span = "<span>"+ response[i]['date'];
+                            span += " | "+ response[i]['check_in_time'];
+                            (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
+                            span += "</span><br>";
+                            $('#container-history-attendance').append(span);
+                        }
+                    }
+
+                })
+                .catch(function(err) {
+                    console.log('Fetch Error :-S', err);
+                });
+        })
     </script>
 
 <?= $this->endSection(); ?>

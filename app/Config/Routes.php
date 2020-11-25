@@ -50,6 +50,20 @@ $routes->get('/leaderboard','LeaderBoardController::index');
 //PaidLeave Routes
 $routes->get('/paidLeave','PaidLeaveController::index');
 $routes->post('/RequestLeave','PaidLeaveController::requestLeave');
+
+//Admin Routes
+$routes->get('/admin/showLeaveRequest','AdminController::showLeaveRequest');
+$routes->get('/admin/fetchSelectedLeaveRequest','AdminController::fetchSelectedLeaveRequest');
+$routes->post('/admin/respondLeaveRequest','AdminController::respondLeaveRequest');
+
+$routes->get('/admin/leaveHistory','AdminController::showLeaveHistory');
+$routes->get('/admin/fetchEmployeeLeaveHistory','AdminController::fetchLeaveHistoryByEmployee');
+$routes->get('/admin/fetchLeaveHistoryByDate','AdminController::fetchLeaveHistoryByDate');
+
+$routes->get('/admin/attendanceHistory','AdminController::showAttendanceHistory');
+$routes->get('/admin/fetchAttendanceHistoryByEmployee','AdminController::fetchAttendanceHistoryByEmployee');
+$routes->get('/admin/fetchAttendanceHistoryByDate','AdminController::fetchAttendanceHistoryByDate');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

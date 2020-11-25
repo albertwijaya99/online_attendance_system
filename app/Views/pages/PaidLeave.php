@@ -30,7 +30,7 @@
     Remaining Day Off : <?= $remaining_leaves?> <br>
 
     <?php foreach ($history_leaves as $item):?>
-        <?php echo $item['leave_date'].' - '.$item['status'] .' - '.$item['requester_note']; ?>
+        <?php echo $item['leave_date'].' - '.$item['status'] .' - '.$item['requester_note'] .' - '. $item['approver_note']; ?>
         <br>
     <?php endforeach;?>
 
@@ -38,12 +38,6 @@
     <div class="modal" tabindex="-1" role="dialog" id="leaveModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body">
                     <span style="display: none; color: red" id="errMsgLeaveType">Please Choose Leave Type</span>
                     <button onclick="determineLeaveType('paid')" id="paidButton" class="leaveTypeButton btn btn-outline-primary ">Paid</button>
@@ -76,7 +70,10 @@
     var leaveReasonGlobal = "";
     var leaveDateGlobal = "";
     $('#mdp-demo').multiDatesPicker({
-        beforeShowDay: $.datepicker.noWeekends,
+        beforeShowDay: function(date) {
+            var day = date.getDay();
+            return [(day != 0),  ''];
+        },
         maxPicks: <?= $remaining_leaves?>
     });
 
