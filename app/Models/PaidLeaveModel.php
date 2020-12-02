@@ -76,7 +76,6 @@ class PaidLeaveModel extends Model
     }
     public function respondLeaveRequest($requesterNotes, $adminResponse, $declineReason ,$requesterEmail){
         $db         =   \Config\Database::connect();
-        $EmployeeModel = new EmployeeModel();
         $builder    =   $db->table('paidleave');
         $query      =   $builder
             ->where('requester_note',$requesterNotes)
@@ -87,6 +86,7 @@ class PaidLeaveModel extends Model
         $leaveID = "";
         $counter = count($query);
         if($adminResponse === "decline") {
+            $EmployeeModel = new EmployeeModel();
             $remainingLeave = $EmployeeModel->getRemainingLeave($requesterEmail);
             $remainingLeave += $counter;
             $data = [
