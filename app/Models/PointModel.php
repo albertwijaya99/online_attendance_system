@@ -27,7 +27,7 @@ class PointModel extends Model
         $diff = $TapIn->difference($TapOut);
         $data = [
             'email' => session()->get('Email'),
-            'point' => $diff->getMinutes(),
+            'point' => $diff->getMinutes()/10,
             'date'  => $currTime->toDateString()
         ];
         if($diff->getMinutes()>0) $this->insert($data);

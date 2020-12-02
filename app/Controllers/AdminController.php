@@ -15,8 +15,10 @@ class AdminController extends Controller
     public function showLeaveRequest()
     {
         $PaidLeaveModel = new PaidLeaveModel();
+        $EmployeeModel = new EmployeeModel();
         //intialize model and helper
         if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
+        if(!$EmployeeModel->isAdmin(session()->get('Email'))) return redirect()->to(base_url('/'));
         $data['title'] = "admin";
         $data['requesterEmailList'] = $PaidLeaveModel->getLeaveRequest('pending');
         return view('pages/admin/leaveRequest',$data);
@@ -26,6 +28,7 @@ class AdminController extends Controller
         $EmployeeModel = new EmployeeModel();
         //intialize model and helper
         if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
+        if(!$EmployeeModel->isAdmin(session()->get('Email'))) return redirect()->to(base_url('/'));
         $data['title'] = "admin";
         $data['employee'] = $EmployeeModel->getAllEmployeeWithStringDivision();
         return view('pages/admin/leaveHistory',$data);
@@ -35,6 +38,7 @@ class AdminController extends Controller
         $EmployeeModel = new EmployeeModel();
         //intialize model and helper
         if(!session()->get('Email')) return redirect()->to(base_url('/login')); // return to login page
+        if(!$EmployeeModel->isAdmin(session()->get('Email'))) return redirect()->to(base_url('/'));
         $data['title'] = "admin";
         $data['employee'] = $EmployeeModel->getAllEmployeeWithStringDivision();
         return view('pages/admin/attendanceHistory',$data);

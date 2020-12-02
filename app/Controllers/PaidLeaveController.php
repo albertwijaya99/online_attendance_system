@@ -16,7 +16,7 @@ class PaidLeaveController extends Controller
         $data['remaining_leaves'] = $EmployeeModel->getRemainingLeave(session()->get('Email'));
         $data['history_leaves'] = $PaidLeaveModel->getLeaveHistoryPerEmployee(session()->get('Email'));
         $data['title'] = "paidleave";
-        return view('pages/paidLeave',$data);
+        return view('pages/PaidLeave',$data);
     }
 
     public function requestLeave(){
