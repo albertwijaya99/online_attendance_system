@@ -76,6 +76,7 @@ class PaidLeaveModel extends Model
     }
     public function respondLeaveRequest($requesterNotes, $adminResponse, $declineReason ,$requesterEmail){
         $db         =   \Config\Database::connect();
+        $EmployeeModel = new EmployeeModel();
         $builder    =   $db->table('paidleave');
         $query      =   $builder
             ->where('requester_note',$requesterNotes)
@@ -85,20 +86,29 @@ class PaidLeaveModel extends Model
             ->getResultArray();
         $leaveID = "";
         $counter = count($query);
-        //collect id of pending leaves request
-        foreach($query as $leave):
-            $leaveID.= $leave['leave_id'];
-            $counter -= 1;
-            if($counter > 0) $leaveID .= ",";
-        endforeach;
-        $leaveIDArr = explode(',',$leaveID);
-        //update leaves request simultaneously
-        foreach($query as $index => $leave):
+        if($adminResponse === "decline") {
+            $remainingLeave = $EmployeeModel->getRemainingLeave($requesterEmail);
+            $remainingLeave += $counter;
             $data = [
-                'status' => $adminResponse,
-                'approver_note' => $declineReason
+                'remaining_leave' => $remainingLeave,
             ];
-            $this->update($leaveIDArr[$index],$data);
-        endforeach;
+            $EmployeeModel->update($requesterEmail,$data);
+        }
+            //collect id of pending leaves request
+            foreach($query as $leave):
+                $leaveID.= $leave['leave_id'];
+                $counter -= 1;
+                if($counter > 0) $leaveID .= ",";
+            endforeach;
+            $leaveIDArr = explode(',',$leaveID);
+            //update leaves request simultaneously
+            foreach($query as $index => $leave):
+                $data = [
+                    'status' => $adminResponse,
+                    'approver_note' => $declineReason
+                ];
+                $this->update($leaveIDArr[$index],$data);
+            endforeach;
+
     }
 }
