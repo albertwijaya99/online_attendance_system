@@ -1,4 +1,4 @@
-<?= $this->extend('includes/Template'); ?>
+<?= $this->extend('Includes/Template'); ?>
 
 <?= $this->section('customCSS');?>
 <!-- Custom CSS goes Here-->
