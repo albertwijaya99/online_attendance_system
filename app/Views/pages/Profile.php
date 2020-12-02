@@ -66,6 +66,7 @@
             <div class="modal-body">
             <!--Start of Change profile picture form-->
                 <form action="<?= base_url('changeProfilePicture')?>" enctype="multipart/form-data" method="post">
+                    <?= csrf_field() ?>
                     <input type="file" name="newProfilePicture" id="newProfilePicture" accept="image/*" required>
             </div>
             <div class="modal-footer">
