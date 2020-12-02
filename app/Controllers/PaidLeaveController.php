@@ -29,9 +29,9 @@ class PaidLeaveController extends Controller
         $leaveDateRangeArr = explode(', ',$db->escapeString($request->getPost('leave_date_range')));
         $leaveReason = !empty($request->getPost('leave_reason')) ? $db->escapeString($request->getPost('leave_reason')) : "";
         $leaveType = !empty($request->getPost('leave_type')) ? $db->escapeString($request->getPost('leave_type')) : "";
-
+        $leaveReason = trim(preg_replace('/\s\s+/', ' ', $leaveReason));
         $PaidLeaveModel->requestLeave($leaveDateRangeArr,$leaveReason,$leaveType);
-        $EmployeeModel->cutRemainingLeave(count($leaveDateRangeArr));
+        if($leaveType!= 'unpaid') $EmployeeModel->cutRemainingLeave(count($leaveDateRangeArr));
         return redirect()->to(base_url('paidLeave'));
     }
 }

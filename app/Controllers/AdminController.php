@@ -73,8 +73,10 @@ class AdminController extends Controller
         $db = \Config\Database::connect();
         $PaidLeaveModel = new PaidLeaveModel();
         $requesterNotes = !empty($request->getPost('requesterNote')) ? $db->escapeString($request->getPost('requesterNote')) : "";
+        $requesterNotes = trim(preg_replace('/\s\s+/', ' ', $requesterNotes));
         $adminResponse = !empty($request->getPost('adminResponse')) ? $db->escapeString($request->getPost('adminResponse')) : "";
         $declineReason = !empty($request->getPost('declineReason')) ? $db->escapeString($request->getPost('declineReason')) : "";
+        $declineReason = trim(preg_replace('/\s\s+/', ' ', $declineReason));
         $requesterEmail = !empty($request->getPost('requesterEmail')) ? $db->escapeString($request->getPost('requesterEmail')) : "";
         if($adminResponse === "accept" || $adminResponse === "decline"){
             $PaidLeaveModel->respondLeaveRequest($requesterNotes, $adminResponse, $declineReason ,$requesterEmail);
