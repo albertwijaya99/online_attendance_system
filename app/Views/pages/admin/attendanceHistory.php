@@ -81,8 +81,8 @@
                 else {
                     for(var i = 0 ; i<response.length ; i++){
                         span = "<span>"+ response[i]['date'];
-                        span += " | "+ response[i]['check_in_time'];
-                        (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
+                        span += " | "+ moment(response[i]['check_in_time']).format('LT');
+                        (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + moment(response[i]['check_out_time']).format('LT');
                         span += "</span><br>";
                         $('#container-history-attendance').append(span);
                     }
@@ -118,8 +118,8 @@
                 else {
                     for(var i = 0 ; i<response.length ; i++){
                         span = "<span>"+ response[i]['employee_name'];
-                        span += " | "+ response[i]['check_in_time'];
-                        (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + response[i]['check_out_time'];
+                        span += " | "+ moment(response[i]['check_in_time']).format('LT');
+                        (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + moment(response[i]['check_out_time']).format('LT');
                         span += "</span><br>";
                         $('#container-history-attendance').append(span);
                     }
