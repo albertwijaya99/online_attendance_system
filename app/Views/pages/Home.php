@@ -42,7 +42,7 @@
                  <div class="modal-dialog" role="document">
                      <div class="modal-content">
                          <div class="modal-header">
-                             <h5 class="modal-title">History Attendance</h5>
+                             <h5 class="modal-title" style="color: black;">History Attendance</h5>
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                  <span aria-hidden="true">&times;</span>
                              </button>
@@ -99,20 +99,27 @@
                 .then(response => {
                     console.log(response)
                     var span = "";
+                    var table = "";
                     if(response.length === 0){
-                        span = "<span> no attendance history found </span><br>";
+                        span = "<span> No attendance history found! </span><br>";
                         $('#container-history-attendance').append(span);
                     }
                     else {
-                        for(var i = 0 ; i<response.length ; i++){
-                            span = "<span>"+ response[i]['date'];
-                            span += " | "+ moment(response[i]['check_in_time']).format('LT');
-                            (response[i]['check_out_time'] === null) ? span += " | - "  : span += " | " + moment(response[i]['check_out_time']).format('LT');
-                            span += "</span><br>";
-                            $('#container-history-attendance').append(span);
-                        }
+                            table = "<table>";
+                            table += "<thead>";
+                            table += "<tr><th>Date</th><th>CheckIn</th><th>CheckOut</th></tr>"
+                            table += "</thead>";
+                            table += "<tbody>";
+                            for(var i = 0 ; i<response.length ; i++) {
+                            table += "<tr><td>"+response[i]['date']+"</td>";
+                            table += "<td>"+moment(response[i]['check_in_time']).format('LT')+"</td>";
+                            table += "<td>";
+                            (response[i]['check_out_time'] === null) ? table += "-"  : table += moment(response[i]['check_out_time']).format('LT');+"</td></tr>";
+                            }
+                            table += "</tbody>";
+                            table += "</table>";
+                          $('#container-history-attendance').append(table);
                     }
-
                 })
                 .catch(function(err) {
                     console.log('Fetch Error :-S', err);

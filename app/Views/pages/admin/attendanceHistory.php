@@ -3,14 +3,8 @@
 <?= $this->section('customCSS');?>
 <!-- Custom CSS goes Here-->
 
-<!-- Custom Home CSS -->
-<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Home.css'); ?>">
-
-<!-- Custom Leaderboard CSS -->
-<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Leaderboard.css'); ?>">
-
-<!-- Custom Profile CSS -->
-<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Profile.css'); ?>">
+<!-- Custom Admin CSS -->
+<link rel="stylesheet" type = "text/css"  href="<?php echo base_url('css/Admin.css'); ?>">
 <?= $this->endSection(); ?>
 
 <?= $this->section('customJS');?>
@@ -27,19 +21,22 @@
 
 <!--    loop to show requester name-->
 <br><br><br><br><br>
-<?php foreach ($employee as $index => $currEmployee) :?>
-    <div class="employee_name" name="<?= $index?>" employee_name="<?= $currEmployee['employee_name'] ?>" employee_email="<?= $currEmployee['employee_email']?> ">
-        <?php echo $currEmployee['employee_name'] .' - '.  $currEmployee['division_name'] ?>
-    </div>
-    <br>
-<?php endforeach;?>
+<h1 class="center">Attendance History</h1>
+ <div class="card-table">
+ <?php foreach ($employee as $index => $currEmployee) :?>
+     <div class="employee_name" name="<?= $index?>" employee_name="<?= $currEmployee['employee_name'] ?>" employee_email="<?= $currEmployee['employee_email']?> ">
+         <?php echo $currEmployee['employee_name'] .' - '.  $currEmployee['division_name'] ?>
+     </div>
+     <br>
+ <?php endforeach;?>
+ </div>
 
 <!--    div to contains all attendance history info-->
 <div id="container-history-attendance" style="color: red"></div>
 
 <br>
 
-<div id="mdp-demo"></div> <!--calendar div-->-->
+<div id="mdp-demo"></div> <!--calendar div -->
 <button name="checkAttendanceHistory" id="checkAttendanceHistory" class="btn-checkin-checkout btn-check-history-by-date">Check</button>
 
 <?= $this->endSection(); ?>
