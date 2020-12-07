@@ -50,7 +50,6 @@
                          <div class="modal-body">
                              <!--    div to contains all attendance history info-->
                              <div id="container-history-attendance" style="color: red"></div>
-
                              <br>
                          </div>
                              <!-- End of Change profile picture form -->

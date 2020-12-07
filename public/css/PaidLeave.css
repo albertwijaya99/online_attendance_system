@@ -1,0 +1,173 @@
+body {
+    background: linear-gradient(0deg, rgba(68,17,107,1) 0%, rgba(104,51,143,1) 0%, rgba(20,139,163,1) 100%);
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: defaultFont;
+    src: url("../assets/fonts/raleway-regular.ttf");
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url("../assets/fonts/copperplate-gothic.ttf");
+}
+
+div {
+    font-family: defaultFont;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+textarea {
+    width: 300px;
+    height: 90px;
+    margin-top: 260px;
+}
+
+mark {
+    font-size: 25px;
+    background: none;
+    color: red;
+}
+
+.modal-content {
+    height: 600px;
+    overflow: auto;
+}
+
+.card {
+    background: rgb(195,174,238);
+    background: radial-gradient(circle, rgba(195,174,238,1) 0%, rgba(148,187,233,1) 30%);
+    width: 50px;
+    height: 35px;
+    margin-left:20px;
+}
+
+.card-table {
+    background: white;
+    width: 550px;
+    height: 300px;
+    margin-left:60px;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date-picker {
+    margin: 0;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.table-container {
+    height: 14em;
+}
+
+table {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+table thead {
+    /* head takes the height it requires,
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+
+table tbody {
+    /* body takes all the remaining available space */
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: scroll;
+}
+
+table tbody tr {
+    width: 100%;
+}
+table thead, table tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+
+#tablepaidleave td, #tablepaidleave th {
+    border: 1px solid #ed3e58;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+#tablepaidleave tr:nth-child(even){background-color: #f2f2f2;}
+
+#tablepaidleave tr:hover {background-color: #ddd;}
+
+.img-vector {
+    float: right;
+    width: 700px;
+    padding-top: 80px;
+    padding-left: 70px;
+}
+
+.btn-checkin-checkout {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, rgba(100,125,200,1), rgba(126,123,241,1), rgba(98,91,182,1), rgba(187,226,233,1));
+
+    box-shadow: 0 5px 10px -3px #f0f0f0;
+}
+
+.btn-checkin-checkout:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+.btn-checkin-checkout:focus {
+    outline: none;
+}
+
+/*Button disabled - CSS color class*/
+.btn-checkin-checkout:disabled
+{
+    cursor: not-allowed;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(63,63,65,1) 0%, rgba(119,118,118,1) 47%, rgba(171,170,170,1) 100%);
+    color: #c0c0c0;
+}
