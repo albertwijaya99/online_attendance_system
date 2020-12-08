@@ -25,9 +25,10 @@ h1 {
 }
 
 .card-table {
+    padding: 20px;
     background: white;
     width: 1000px;
-    height: 300px;
+    height: 450px;
     display: block;
     margin-top: 30px;
     margin-left: auto;
@@ -44,8 +45,34 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.center-table {
+    width: 80%;
+    position: relative;
+    top: 43%;
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.employee_name {
+    cursor: pointer;
+}
+
+table {
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
 .table-container {
     height: 14em;
+}
+
+.table-flex {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
 }
 
 table thead {
@@ -80,6 +107,23 @@ table thead, table tbody tr {
 #tablepaidleave tr:nth-child(even){background-color: #f2f2f2;}
 
 #tablepaidleave tr:hover {background-color: #ddd;}
+
+table tbody tr {
+    width: 100%;
+}
+table thead, table tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+
+table td, table th {
+    border: 1px solid #ed3e58;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
 
 .img-vector {
     float: right;
@@ -134,4 +178,71 @@ table thead, table tbody tr {
     pointer-events: none;
     background: linear-gradient(90deg, rgba(63,63,65,1) 0%, rgba(119,118,118,1) 47%, rgba(171,170,170,1) 100%);
     color: #c0c0c0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    height:100%;
+    display: block;
+    height: 50px;
+}
+
+[type="radio"]{
+    display: none;
+    z-index: 5;
+    position: relative;
+}
+
+[type="radio"] ~ span{
+    transition: background .3s;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 25px;
+    z-index: 5;
+    position: relative;
+    color: black;
+}
+
+[type="radio"]:checked ~ span{
+    color: white;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ed3e58;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    width: 0;
+    transition: .3s width;
+}
+
+label:nth-child(1) .bg{
+    right: 0;
+    left: auto;
+}
+
+label:nth-child(2) .bg{
+    left: 0;
+}
+
+[type="radio"]:checked + .bg{
+    width: 100%;
+}
+
+.wrap{
+    border:1px solid #ddd;
+    color: white;
+    height: 50px;
+    display: inline-flex;
+    overflow:hidden;
+    border-radius: 50px;
 }
