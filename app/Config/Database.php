@@ -30,7 +30,7 @@ class Database extends \CodeIgniter\Database\Config
 	 * @var array
 	 */
 	public $default = [
-		'DSN'      => '',
+		'DSN'      => 'mysql://b6ec215aeedc21:4ea1ea72@us-cdbr-east-02.cleardb.com/heroku_0b26e8934148a3c?reconnect=true',
 		'hostname' => 'us-cdbr-east-02.cleardb.com',
 		'username' => 'b6ec215aeedc21',
 		'password' => '4ea1ea72',
