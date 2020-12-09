@@ -30,11 +30,11 @@ class Database extends \CodeIgniter\Database\Config
 	 * @var array
 	 */
     //Get Heroku ClearDB connection information
-    $cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $cleardb_server   = $cleardb_url["host"];
-    $cleardb_username = $cleardb_url["user"];
-    $cleardb_password = $cleardb_url["pass"];
-    $cleardb_db       = substr($cleardb_url["path"],1);
+    public $cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    public $cleardb_server   = $cleardb_url["host"];
+    public $cleardb_username = $cleardb_url["user"];
+    public $cleardb_password = $cleardb_url["pass"];
+    public $cleardb_db       = substr($cleardb_url["path"],1);
 
 	public $default = [
 		'DSN'      => '',
