@@ -91,6 +91,16 @@
     maxPicks: 1,
   });
 
+  // Css when name selected
+  $(".employee_name").click(function () {
+    // When name is clicked,add color to active (set color to black)
+    $(".employee_name").css("color", "black");
+
+    // When name is not clicked, remove class active
+    $(".employee_name").removeClass("active");
+    $(this).addClass("active");
+  });
+
   //send ajax after admin clicked on requester name, to get the requested attendance date and show attendance history
   $(".employee_name").on("click", function () {
     $("#container-history-attendance").empty();

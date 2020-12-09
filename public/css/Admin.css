@@ -36,6 +36,18 @@ h1 {
     border-radius: 30px;
 }
 
+.card-table-leave-request {
+    padding: 20px;
+    background: white;
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
 .center {
     margin: 0;
     position: absolute;
@@ -56,6 +68,19 @@ h1 {
 
 .employee_name {
     cursor: pointer;
+}
+
+.employee_name.active {
+    font-weight: bold;
+}
+
+.requester_name {
+    color: black;
+    cursor: pointer;
+}
+
+.requester_name.active {
+    font-weight: bold;
 }
 
 table {
@@ -87,6 +112,7 @@ table tbody {
     flex: 1 1 auto;
     display: block;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 table tbody tr {
@@ -238,11 +264,62 @@ label:nth-child(2) .bg{
     width: 100%;
 }
 
-.wrap{
+.wrap {
     border:1px solid #ddd;
     color: white;
     height: 50px;
     display: inline-flex;
     overflow:hidden;
     border-radius: 50px;
+}
+
+.decline-button {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #8c8c8c;
+    background-color: #e44848;
+    color: #fff;
+    border: 0 none;
+    padding: 0;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    line-height: 3em;
+    position: relative;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.decline-button:hover {
+    background-color:darkred;
+    color: #fff;
+    cursor: pointer;
+}
+
+.approve-button {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #8c8c8c;
+    background-color: forestgreen;
+    color: #fff;
+    border: 0 none;
+    padding: 0;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    line-height: 3em;
+    position: relative;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.approve-button:hover {
+    background-color: darkgreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea {
+    width: 300px;
+    height: 90px;
 }
