@@ -18,7 +18,7 @@
 
                     <?php if(session()->get('isAdmin') === '1'): //only showed on admin account?>
                     <li class="nav-item dropdown" id="li-admin">
-                        <a href="#" class="font-white nav-link dropdown-toggle font-weight-bold" id="a-admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+                        <a href="#" class="font-white nav-link dropdown-toggle font-weight-bold" id="a-admin" data-toggle="dropdown">Admin</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="<?= base_url('/admin/attendanceHistory')?>">Employee Attendance History</a>
                             <a class="dropdown-item" href="<?= base_url('/admin/leaveHistory')?>">Employee Leave History</a>

@@ -1,0 +1,325 @@
+body {
+    background: linear-gradient(0deg, rgba(68,17,107,1) 0%, rgba(104,51,143,1) 0%, rgba(20,139,163,1) 100%);
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: defaultFont;
+    src: url("../assets/fonts/raleway-regular.ttf");
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url("../assets/fonts/copperplate-gothic.ttf");
+}
+
+div {
+    font-family: defaultFont;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-table {
+    padding: 20px;
+    background: white;
+    width: 1000px;
+    height: 450px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.card-table-leave-request {
+    padding: 20px;
+    background: white;
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center-table {
+    width: 80%;
+    position: relative;
+    top: 43%;
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.employee_name {
+    cursor: pointer;
+}
+
+.employee_name.active {
+    font-weight: bold;
+}
+
+.requester_name {
+    color: black;
+    cursor: pointer;
+}
+
+.requester_name.active {
+    font-weight: bold;
+}
+
+table {
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+.table-container {
+    height: 14em;
+}
+
+.table-flex {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+table thead {
+    /* head takes the height it requires,
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+
+table tbody {
+    /* body takes all the remaining available space */
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+table tbody tr {
+    width: 100%;
+}
+table thead, table tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+
+#tablepaidleave td, #tablepaidleave th {
+    border: 1px solid #ed3e58;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+#tablepaidleave tr:nth-child(even){background-color: #f2f2f2;}
+
+#tablepaidleave tr:hover {background-color: #ddd;}
+
+table tbody tr {
+    width: 100%;
+}
+table thead, table tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+
+table td, table th {
+    border: 1px solid #ed3e58;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+.img-vector {
+    float: right;
+    width: 700px;
+    padding-top: 80px;
+    padding-left: 70px;
+}
+
+.btn-checkin-checkout {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, rgba(100,125,200,1), rgba(126,123,241,1), rgba(98,91,182,1), rgba(187,226,233,1));
+
+    box-shadow: 0 5px 10px -3px #f0f0f0;
+}
+
+.btn-checkin-checkout:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+.btn-checkin-checkout:focus {
+    outline: none;
+}
+
+/*Button disabled - CSS color class*/
+.btn-checkin-checkout:disabled
+{
+    cursor: not-allowed;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(63,63,65,1) 0%, rgba(119,118,118,1) 47%, rgba(171,170,170,1) 100%);
+    color: #c0c0c0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    height:100%;
+    display: block;
+    height: 50px;
+}
+
+[type="radio"]{
+    display: none;
+    z-index: 5;
+    position: relative;
+}
+
+[type="radio"] ~ span{
+    transition: background .3s;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 25px;
+    z-index: 5;
+    position: relative;
+    color: black;
+}
+
+[type="radio"]:checked ~ span{
+    color: white;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ed3e58;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    width: 0;
+    transition: .3s width;
+}
+
+label:nth-child(1) .bg{
+    right: 0;
+    left: auto;
+}
+
+label:nth-child(2) .bg{
+    left: 0;
+}
+
+[type="radio"]:checked + .bg{
+    width: 100%;
+}
+
+.wrap {
+    border:1px solid #ddd;
+    color: white;
+    height: 50px;
+    display: inline-flex;
+    overflow:hidden;
+    border-radius: 50px;
+}
+
+.decline-button {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #8c8c8c;
+    background-color: #e44848;
+    color: #fff;
+    border: 0 none;
+    padding: 0;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    line-height: 3em;
+    position: relative;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.decline-button:hover {
+    background-color:darkred;
+    color: #fff;
+    cursor: pointer;
+}
+
+.approve-button {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #8c8c8c;
+    background-color: forestgreen;
+    color: #fff;
+    border: 0 none;
+    padding: 0;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    line-height: 3em;
+    position: relative;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.approve-button:hover {
+    background-color: darkgreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea {
+    width: 300px;
+    height: 90px;
+}
